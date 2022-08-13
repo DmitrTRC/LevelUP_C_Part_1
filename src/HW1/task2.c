@@ -17,15 +17,15 @@ int main () {
     long b = readInt ("b = ");
     long d = readInt ("d = ");
 
-    a = a + b - 2;
-    c = c + 1;
-    d = c - a + d;
-    a = a * c;
-    c = c - 1;
+    a += b - 2;
+    c++;
+    d += c - a;
+    a *= c;
+    c--;
     a = a / 10;
     c = c / 2;
-    b = b - 1;
-    d = d * (c + b + a);
+    b--;
+    d *= c + b + a;
 
     printf (" a = %ld, b = %ld, c = %ld, d = %ld\n", a, b, c, d);
 
