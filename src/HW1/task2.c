@@ -8,32 +8,14 @@
 #include <errno.h>
 
 
+long readInt (const char *);
+
+
 int main () {
-    int a = 5, c = 5;
+    long a = 5, c = 5;
 
-    int b;
-    printf (" b = ");
-    scanf ("%d\n", &b);
-
-//    int d;
-//    printf (" d = ");
-//    scanf ("%d", &d);
-//Better way to do it:
-
-    const int BUFFER_SIZE = 256;
-    char buffer[BUFFER_SIZE];
-    char *end_ptr;
-    long d;
-
-    errno = 0;
-
-    fgets (buffer, BUFFER_SIZE, stdin);
-    d = strtoimax (buffer, &end_ptr, 10);
-    if (errno) {
-        perror ("Number conversion error : ");
-        exit (EXIT_FAILURE);
-    }
-
+    long b = readInt ("b = ");
+    long d = readInt ("d = ");
 
     a = a + b - 2;
     c = c + 1;
@@ -45,7 +27,28 @@ int main () {
     b = b - 1;
     d = d * (c + b + a);
 
-    printf (" a = %d, b = %d, c = %d, d = %d\n", a, b, c, d);
+    printf (" a = %ld, b = %ld, c = %ld, d = %ld\n", a, b, c, d);
 
     return 0;
 }
+
+long readInt (const char *prompt) {
+    long value;
+    const int BUFFER_SIZE = 256;
+    char buffer[BUFFER_SIZE];
+    char *end_ptr;
+
+    errno = 0;
+
+    printf ("%s", prompt);
+    fgets (buffer, BUFFER_SIZE, stdin);
+    value = strtoimax (buffer, &end_ptr, 10);
+
+    if (errno) {
+        perror ("Number conversion error : ");
+        exit (EXIT_FAILURE);
+    }
+
+    return value;
+}
+
