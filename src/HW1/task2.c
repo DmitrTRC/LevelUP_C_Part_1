@@ -3,6 +3,9 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <inttypes.h>
+#include <errno.h>
 
 
 int main () {
@@ -10,11 +13,27 @@ int main () {
 
     int b;
     printf (" b = ");
-    scanf ("%d", &b);
+    scanf ("%d\n", &b);
 
-    int d;
-    printf (" d = ");
-    scanf ("%d", &d);
+//    int d;
+//    printf (" d = ");
+//    scanf ("%d", &d);
+//Better way to do it:
+
+    const int BUFFER_SIZE = 256;
+    char buffer[BUFFER_SIZE];
+    char *end_ptr;
+    long d;
+
+    errno = 0;
+
+    fgets (buffer, BUFFER_SIZE, stdin);
+    d = strtoimax (buffer, &end_ptr, 10);
+    if (errno) {
+        perror ("Number conversion error : ");
+        exit (EXIT_FAILURE);
+    }
+
 
     a = a + b - 2;
     c = c + 1;
