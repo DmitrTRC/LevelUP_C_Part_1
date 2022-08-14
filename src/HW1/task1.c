@@ -5,7 +5,7 @@ int main () {
     int a, b = 5, c;
     float x, y = (float) -.5, z;
     printf ("a = ");
-    scanf ("%d", &a); // Better using strtod() instead
+    scanf ("%d", &a); // Bad practice, but for the sake of simplicity
     x = (float) (c = a);
     printf ("a = %d, c = %d, x = %f\n", a, c, x);
     a += b;
