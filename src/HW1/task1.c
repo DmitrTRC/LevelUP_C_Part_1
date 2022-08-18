@@ -21,7 +21,7 @@ int main () {
     c = a % b;
     printf ("c = %d\n", c);
     x = (float) 5.3;
-//    y += ((--x - 1) / x++); // Needs to be split. Unexpected result
+//    y += ((--x - 1) / x++); // Needs to be split. Unexpected result. Compiler depends.
     y += ((x - 2) / x);
     printf (" x = %f\ty = %.2f\n\n x = %.0f\ty = %.0f\n", x - 1, y, x, y - 1);
     z = (float) a / 2;
@@ -33,7 +33,7 @@ int main () {
     y = (float) ((int) x) / 2;
     printf (" y = %f\n", y);
     z = (float) ((float) (a % 2) - (x + (float) b) / (float) c + (x - y) / (float) (a - 1) + (float) 1 / 4 * (float) a -
-                 y++ + ++b / 3.); // Needs to be split. Unexpected result
+                 y++ + ++b / 3.); // Needs to be split. Unexpected result compiler and platform dependent
     printf (" a = %d, b = %d, c = %d, x = %f, y = %f, z = %f\n", a, b, c, x, y, z);
     return 0;
 }
