@@ -21,7 +21,8 @@ int main () {
     c = a % b;
     printf ("c = %d\n", c);
     x = (float) 5.3;
-    y += ((--x - 1) / x++); // Needs to be split. Unexpected result
+//    y += ((--x - 1) / x++); // Needs to be split. Unexpected result
+    y += ((x - 2) / x);
     printf (" x = %f\ty = %.2f\n\n x = %.0f\ty = %.0f\n", x - 1, y, x, y - 1);
     z = (float) a / 2;
     printf (" z = %f\n", z);
