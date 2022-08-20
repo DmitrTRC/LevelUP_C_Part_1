@@ -7,11 +7,18 @@
 #include <cinttypes>
 #include <cerrno>
 
+#include "task2.hpp"
 
-long readInt (const char *);
+
+void task2::Solution::run () {
+    auto a_data = readInt ("Enter a: ");
+    auto b_data = readInt ("Enter b: ");
+    auto result = solution ({a_data, b_data});
+
+}
 
 
-int main () {
+auto task2::Solution::solution (std::tuple<long, long> &data) -> std::tuple<long, long, long, long> {
     long a = 5, c = 5;
 
     long b = readInt ("b = ");
@@ -28,12 +35,12 @@ int main () {
     b--;
     d *= c + b + a;
 
-    printf (" a = %ld, b = %ld, c = %ld, d = %ld\n", a, b, c, d);
+//    printf (" a = %ld, b = %ld, c = %ld, d = %ld\n", a, b, c, d);
 
-    return 0;
+    return {a, b, c, d};
 }
 
-long readInt (const char *prompt) {
+long task2::Solution::readInt (const char *prompt) {
     long value;
     const int BUFFER_SIZE = 256;
     char buffer[BUFFER_SIZE];

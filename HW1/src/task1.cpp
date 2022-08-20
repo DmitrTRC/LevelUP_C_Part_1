@@ -1,7 +1,9 @@
 #include <cstdio>
+#include "task1.hpp"
 
 
-int main () {
+void task1::Solution::task1_demo () {
+
     int a, b = 5, c;
     float x, y = (float) -.5, z;
     printf ("a = ");
@@ -32,8 +34,12 @@ int main () {
     printf (" y = %f\n", y);
     y = (float) ((int) x) / 2;
     printf (" y = %f\n", y);
-    z = (float) ((float) (a % 2) - (x + (float) b) / (float) c + (x - y) / (float) (a - 1) + (float) 1 / 4 * (float) a -
+    z = (float) ((float) (a % 2) - (x + (float) b) / (float) c + (x - y) / (float) (a - 1) +
+                 (float) 1 / 4 * (float) a -
                  y++ + ++b / 3.); // Needs to be split. Unexpected result compiler and platform dependent
     printf (" a = %d, b = %d, c = %d, x = %f, y = %f, z = %f\n", a, b, c, x, y, z);
-    return 0;
+}
+
+void task1::Solution::run () {
+    task1_demo ();
 }

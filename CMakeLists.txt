@@ -3,9 +3,14 @@ project(LevelUP_C_PartI)
 
 set(CMAKE_CXX_STANDARD 20)
 
-#Until Technical Task is not fixed, just uncomment necessary lines
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG release-1.12.1
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
-add_executable(LevelUP_C_PartI
- #       src/HW1/task1.cpp
-        src/HW1/task2.cpp
-        )
+add_subdirectory(HW1)
