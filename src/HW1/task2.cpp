@@ -2,10 +2,10 @@
 // Created by Dmitry Morozov on 13/8/22.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <inttypes.h>
-#include <errno.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cinttypes>
+#include <cerrno>
 
 
 long readInt (const char *);
@@ -16,6 +16,7 @@ int main () {
 
     long b = readInt ("b = ");
     long d = readInt ("d = ");
+
 
     a += b - 2;
     c++;
@@ -37,6 +38,7 @@ long readInt (const char *prompt) {
     const int BUFFER_SIZE = 256;
     char buffer[BUFFER_SIZE];
     char *end_ptr;
+
 
     errno = 0;
 
