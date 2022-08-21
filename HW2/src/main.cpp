@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-//int main (int argc, char **argv) {
-//    std::cout << "HW main() : Started" << std::endl;
-//}
+int main (int argc, char **argv) {
+    std::cout << "HW2 main() : Started" << std::endl;
+}
 

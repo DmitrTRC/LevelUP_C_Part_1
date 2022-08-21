@@ -35,9 +35,10 @@ void task1 () {
     printf (" y = %f\n", y);
     y = (float) ((int) x) / 2;
     printf (" y = %f\n", y);
+    ++b;
     z = (float) ((float) (a % 2) - (x + (float) b) / (float) c + (x - y) / (float) (a - 1) +
-                 (float) 1 / 4 * (float) a -
-                 y++ + ++b / 3.); // Needs to be split. Unexpected result compiler and platform dependent
+                 (float) 1 / 4 * (float) a - y + b / 3.);
+    y++;
     printf (" a = %d, b = %d, c = %d, x = %f, y = %f, z = %f\n", a, b, c, x, y, z);
 }
 
