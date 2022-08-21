@@ -1,8 +1,6 @@
 #include <cstdio>
-#include "task1.hpp"
 
-
-void task1::Solution::task1_demo () {
+void task1 () {
 
     int a, b = 5, c;
     float x, y = (float) -.5, z;
@@ -40,6 +38,3 @@ void task1::Solution::task1_demo () {
     printf (" a = %d, b = %d, c = %d, x = %f, y = %f, z = %f\n", a, b, c, x, y, z);
 }
 
-void task1::Solution::run () {
-    task1_demo ();
-}
