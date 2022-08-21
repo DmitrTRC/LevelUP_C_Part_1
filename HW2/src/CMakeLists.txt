@@ -4,5 +4,7 @@ project(HW2_run)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(HW2_run main.cpp)
+set(HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h)
+set(SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+add_executable(HW2_run ${HEADER_FILES} ${SOURCE_FILES})
 
