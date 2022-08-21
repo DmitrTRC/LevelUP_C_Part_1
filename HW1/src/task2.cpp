@@ -1,17 +1,18 @@
 //
 // Created by Dmitry Morozov on 13/8/22.
 //
+#pragma once
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <inttypes.h>
-#include <errno.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cinttypes>
+#include <cerrno>
 
 
 long readInt (const char *);
 
 
-int main () {
+int task2 () {
     long a = 5, c = 5;
 
     long b = readInt ("b = ");
