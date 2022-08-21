@@ -1,0 +1,8 @@
+
+
+project(HW2_run)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(HW2_run main.cpp)
+

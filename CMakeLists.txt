@@ -17,3 +17,4 @@ FetchContent_MakeAvailable(googletest)
 
 
 add_subdirectory(HW1)
+add_subdirectory(HW2)
