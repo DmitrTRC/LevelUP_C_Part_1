@@ -16,7 +16,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![CMake](https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml/badge.svg?branch=master)](https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml)
+[![CMake][cmake-shield]][status_url]
 
 
 
@@ -246,3 +246,5 @@ Project Link: [https://github.com/DmitrTRC/LevelUP_C_PartI.git](https://github.c
 [license-url]: https://github.com/DmitrTRC/LevelUP_C_PartI/blob/master/LICENSE
 
 [product-screenshot]: Images/levelup-logo.png
+
+[status_url]: https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml/badge.svghttps://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml
