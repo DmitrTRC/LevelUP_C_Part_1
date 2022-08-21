@@ -10,35 +10,38 @@
 
 class Figure {
 public:
-    Figure (std::string);
+    Figure (const std::string &, double);
 
-    virtual double getArea () = 0;
+    [[nodiscard]] virtual double getArea () const = 0;
 
     bool operator< (const Figure &) const;
 
-private:
+    [[nodiscard]] std::string getName () const;
+
+protected:
     std::string name_;
+    double dimension_;
 };
 
 class EquilateralTriangle : public Figure {
 public:
-    EquilateralTriangle (double);
+    explicit EquilateralTriangle (double);
 
-    double getArea () override;
+    [[nodiscard]] double getArea () const override;
 };
 
 class Square : public Figure {
 public:
-    Square (double);
+    explicit Square (double);
 
-    double getArea () override;
+    [[nodiscard]] double getArea ()const override;
 };
 
 class Circle : public Figure {
 public:
-    Circle (double);
+    explicit Circle (double);
 
-    double getArea () override;
+    [[nodiscard]] double getArea () const override;
 };
 
 
