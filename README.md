@@ -248,3 +248,6 @@ Project Link: [https://github.com/DmitrTRC/LevelUP_C_PartI.git](https://github.c
 [product-screenshot]: Images/levelup-logo.png
 
 [status-url]: https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml/badge.svghttps://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml
+
+[status-shield]: https://img.shields.io/github/workflow/status/DmitrTRC/LevelUP_C_PartI/CMake?style=for-the-badge
+
