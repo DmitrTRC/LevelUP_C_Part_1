@@ -16,6 +16,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![CMake](https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml/badge.svg?branch=master)](https://github.com/DmitrTRC/LevelUP_C_PartI/actions/workflows/cmake.yml)
 
 
 
@@ -75,16 +76,18 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+
 [![Product Name Screen Shot][product-screenshot]](https://https://levelp.ru)
-This is a project for the [LevelUP](https://levelp.ru/courses/programmirovanie/fundamentals-of-programming-c-level-1/) course.
+This is a project for the [LevelUP](https://levelp.ru/courses/programmirovanie/fundamentals-of-programming-c-level-1/)
+course.
 Contains the following:
+
 * CMakeLists.txt : CMake configuration file
 * README.md : project description
 * LICENSE.md : project license
 * src/ : source code directory  ( contains sub-folders with HW and code )
 * doc/ : documentation directory ( contains sub-folders with documentation )
-* .github : GitHub repository settings  CI/CD workflow.
-
+* .github : GitHub repository settings CI/CD workflow.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -161,12 +164,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Base Structure implementation 
+- [ ] Base Structure implementation
 - [ ] CI/CD implementation
     - [ ] Github Actions
     - [ ] Docker
 
-See the [open issues](https://github.com/DmitrTRC/LevelUP_C_PartI/issues) for a full list of proposed features (and known issues)
+See the [open issues](https://github.com/DmitrTRC/LevelUP_C_PartI/issues) for a full list of proposed features (and
+known issues)
 .
 
 <p align="right">(<a href="#top">back to top</a>)</p>
