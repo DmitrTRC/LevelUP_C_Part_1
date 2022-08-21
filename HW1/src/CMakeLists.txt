@@ -3,6 +3,8 @@
 project(HW1_run)
 
 set(CMAKE_CXX_STANDARD 20)
+
+
 #
 #set(SOURCE main.cpp
 #        task1.cpp
@@ -13,4 +15,6 @@ set(CMAKE_CXX_STANDARD 20)
 #        ${SOURCE}
 #        )
 
-add_executable(HW1_run main.cpp )
+add_executable(HW1_run main.cpp)
+
+set(EXECUTABLE_OUTPUT_PATH "../bin/")
