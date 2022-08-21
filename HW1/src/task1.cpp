@@ -1,4 +1,7 @@
+#pragma once
+
 #include <cstdio>
+
 
 void task1 () {
 
