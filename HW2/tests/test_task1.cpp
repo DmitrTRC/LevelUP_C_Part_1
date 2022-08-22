@@ -7,11 +7,14 @@
 #include "Task1.hpp"
 
 
+const double PRECISSION = .01;
+
+
 TEST(Task1, getEquation) {
 
-    EXPECT_EQ(getEquation(1), 1);
-    EXPECT_EQ(getEquation(2), 2);
-    EXPECT_EQ(getEquation(3), 3);
+    EXPECT_EQ(getEquation (1), 0 );
+    EXPECT_NEAR(getEquation (2), 499.641, PRECISSION);
+    EXPECT_NEAR(getEquation (3), -2066.53, PRECISSION);
 }
 
 
