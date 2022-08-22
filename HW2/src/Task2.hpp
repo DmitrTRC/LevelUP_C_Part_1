@@ -10,11 +10,9 @@
 
 class Figure {
 public:
-    Figure (const std::string &, double);
+    Figure (std::string , double);
 
     [[nodiscard]] virtual double getArea () const = 0;
-
-    bool operator< (const Figure &) const;
 
     [[nodiscard]] std::string getName () const;
 

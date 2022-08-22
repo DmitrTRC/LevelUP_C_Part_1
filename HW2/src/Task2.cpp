@@ -2,17 +2,13 @@
 // Created by Dmitry Morozov on 21/8/22.
 //
 #include <cmath>
-#include <string>
+#include <utility>
 
 #include "Task2.hpp"
 
 
 //Figure: Abstract class
-Figure::Figure (const std::string &name, double dimension) : name_ (name), dimension_ (dimension) {}
-
-bool Figure::operator< (const Figure &rhs) const {
-    return this->getArea () < rhs.getArea ();
-}
+Figure::Figure (std::string name, double dimension) : name_ (std::move(name)), dimension_ (dimension) {}
 
 std::string Figure::getName () const {
     return name_;

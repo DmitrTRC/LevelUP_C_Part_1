@@ -11,11 +11,20 @@
 
 auto getMaxAreaFigure (const std::vector<Figure *> &figures) {
 
-    return *std::max_element (figures.begin (), figures.end ());
+    return *std::max_element (figures.begin (), figures.end (),
+                              [] (const Figure *lhs, const Figure *rhs) {
+                                  return lhs->getArea () < rhs->getArea ();
+                              });
 };
 
 void printFigures (const std::vector<Figure *> &figures) {
-    for (const auto &figure: figures) {
+
+    auto sortedFigures = figures;
+    std::sort (sortedFigures.begin (), sortedFigures.end (),
+               [] (const Figure *lhs, const Figure *rhs) {
+                   return lhs->getArea () > rhs->getArea ();
+               });
+    for (const auto &figure: sortedFigures) {
         std::cout << figure->getName () << ": " << figure->getArea () << std::endl;
     }
 }
@@ -27,9 +36,6 @@ int main (int argc, char **argv) {
 
     std::cout << "Enter x: ";
 
-    std::cin.clear ();
-    std::cin.ignore (INT_MAX);
-
     double x;
 
     std::cin >> x;
@@ -39,9 +45,6 @@ int main (int argc, char **argv) {
     std::cout << "HOME WORK 2\n\nTask 2" << std::endl;
 
     std::vector<Figure *> figures;
-
-    std::cin.clear ();
-    std::cin.ignore (INT_MAX);
 
     std::cout << "Enter Circle radius R : ";
     double r;
@@ -61,7 +64,10 @@ int main (int argc, char **argv) {
     auto maxAreaFigure = getMaxAreaFigure (figures);
 
     std::cout << "Max area figure: " << maxAreaFigure->getName () << " with area " << maxAreaFigure->getArea ()
-              << std::endl;
+              << std::endl << std::endl;
+
+
+    printFigures (figures);
 
     return 0;
 }

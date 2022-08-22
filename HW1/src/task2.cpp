@@ -1,7 +1,6 @@
 //
 // Created by Dmitry Morozov on 13/8/22.
 //
-#pragma once
 
 #include <cstdio>
 #include <cstdlib>
