@@ -5,3 +5,7 @@ add_executable(HW1_Tests_run
         )
 
 target_link_libraries(HW1_Tests_run gtest gtest_main)
+
+
+include(GoogleTest)
+gtest_discover_tests(HW1_Tests_run)
