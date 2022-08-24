@@ -154,7 +154,8 @@ C Compiler, C++ Compiler, CMake, Git.
 Used in the educational process
 Select the task you want to solve and rebuild the project.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to
+the [Documentation](https://github.com/DmitrTRC/LevelUP_C_PartI/blob/master/Docs/QuickManual.MD)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
