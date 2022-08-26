@@ -10,7 +10,7 @@
 
 class Figure {
 public:
-    Figure (std::string , double);
+    Figure (std::string, double);
 
     [[nodiscard]] virtual double getArea () const = 0;
 
@@ -32,7 +32,7 @@ class Square : public Figure {
 public:
     explicit Square (double);
 
-    [[nodiscard]] double getArea ()const override;
+    [[nodiscard]] double getArea () const override;
 };
 
 class Circle : public Figure {
