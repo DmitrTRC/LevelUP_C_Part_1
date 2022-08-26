@@ -1,11 +1,11 @@
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(HW1_Tests_run
+add_executable(HW_1_1_Tests_run
         test_example.cpp
         )
 
-target_link_libraries(HW1_Tests_run gtest gtest_main)
+target_link_libraries(HW_1_1_Tests_run gtest gtest_main)
 
 
 include(GoogleTest)
-gtest_discover_tests(HW1_Tests_run)
+gtest_discover_tests(HW_1_1_Tests_run)

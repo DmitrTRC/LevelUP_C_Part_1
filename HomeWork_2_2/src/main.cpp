@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 
-#include "Task1.hpp"
 #include "Task2.hpp"
 
 
@@ -30,17 +29,6 @@ void printFigures (const std::vector<Figure *> &figures) {
 }
 
 int main (int argc, char **argv) {
-
-
-    std::cout << "HOME WORK 2\n\nTask 1" << std::endl;
-
-    std::cout << "Enter x: ";
-
-    double x;
-
-    std::cin >> x;
-
-    std::cout << "Equation: " << getEquation (x) << std::endl;
 
     std::cout << "HOME WORK 2\n\nTask 2" << std::endl;
 
