@@ -5,6 +5,10 @@
 #ifndef LEVELUP_C_PARTI_DEV_TASK5_HPP
 #define LEVELUP_C_PARTI_DEV_TASK5_HPP
 
+unsigned long long double_factorial_ (int, unsigned long long);
+
+unsigned long long doubleFactorial (int);
+
 auto reduceSequence (double) -> double;
 
 #endif //LEVELUP_C_PARTI_DEV_TASK5_HPP
