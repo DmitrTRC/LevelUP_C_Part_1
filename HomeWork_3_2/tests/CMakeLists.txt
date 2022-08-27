@@ -3,7 +3,7 @@ enable_testing()
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 include_directories(${HW_3_2_SOURCE_DIR}/src)
-message(STATUS "HW_3_2 Source DIR : ${HW_3_2_SOURCE_DIR}")
+message(STATUS "HW_3_2 Source DIR : ${HW_3_3_SOURCE_DIR}")
 
 
 add_executable(HW_3_2_Tests_run
