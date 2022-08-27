@@ -10,12 +10,14 @@ set(HEADER_FILES
         Playground.hpp
         rfact.hpp
         r_fib.hpp
+        sequence_sum.hpp
         )
 
 set(SOURCE_FILES
         Playground.cpp
         rfact.cpp
         r_fib.cpp
+        sequence_sum.cpp
         )
 
 add_library(Playground_lib ${SOURCE_FILES} ${HEADER_FILES})
