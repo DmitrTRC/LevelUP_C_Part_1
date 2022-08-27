@@ -8,18 +8,46 @@
 #include <functional>
 
 
+/**
+ * "If n is less than 2, return the result, otherwise return the result of calling double_factorial_ with n - 2 and the
+ * result multiplied by n."
+ *
+ * The function is tail recursive because the recursive call is the last thing that happens in the function
+ *
+ * @param n The number to calculate the double factorial of.
+ * @param res The result of the previous iteration.
+ *
+ * @return the result of the double factorial of the number n.
+ */
 //Double-Factorial tail recursion implementation
-//unsigned long long double_factorial_ (int n, unsigned long long res) {
-//    if (n < 2)
-//        return res;
-//    return double_factorial_ (n - 2, res * n);
-//}
-//
-//unsigned long long doubleFactorial (int n) {
-//    return double_factorial_ (n, n >= 0);
-//}
+unsigned long long double_factorial_ (int n, unsigned long long res) {
+    if (n < 2)
+        return res;
+    return double_factorial_ (n - 2, res * n);
+}
 
-//Double-Factorial iterative implementation
+/**
+ * "If n is non-negative, return n times the double factorial of n minus 2, otherwise return 0."
+ *
+ * The function double_factorial_ is a helper function that does the actual work. It takes two arguments: n and a boolean
+ * flag. If the flag is true, the function returns n times the double factorial of n minus 2, otherwise it returns 0
+ *
+ * @param n The number to calculate the double factorial of.
+ *
+ * @return The double factorial of n.
+ */
+unsigned long long doubleFactorialRec (int n) {
+    return double_factorial_ (n, n >= 0);
+}
+
+/**
+ * It takes an integer n and returns the product of all the integers from n to 1, skipping every other number
+ *
+ * @param n The number to calculate the double factorial of.
+ *
+ * @return The double factorial of n.
+ */
+
 unsigned long long doubleFactorial (int n) {
     unsigned long long res = 1;
     for (int i = n; i > 0; i -= 2)
@@ -27,7 +55,20 @@ unsigned long long doubleFactorial (int n) {
     return res;
 }
 
-// Reduce sequence f(x) = x + x^3 / ( 2*3 ) + (1 * 3 * x^5)/(2*4*5) + ... +((2*n -1)!!x^(2*n + 1))/((2*n)!!(2*n + 1)) + ...
+
+/**
+ * It calculates the sum of the series
+ *
+ * $$
+ * \sum_{n=0}^{\infty} \frac{(2n-1)!!}{(2n)!!(2n+1)}x^{2n+1}
+ * $$
+ *
+ * where $n!!$ is the double factorial of $n$
+ *
+ * @param x the value of x
+ *
+ * @return the sum of the series.
+ */
 auto reduceSequence (double x) -> double {
     const double EPSILON = 1e-5;
     double result = 0;

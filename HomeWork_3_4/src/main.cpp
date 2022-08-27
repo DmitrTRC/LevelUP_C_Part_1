@@ -10,7 +10,7 @@
 int main (int argc, char **argv) {
 
 
-    std::cout << "HOME WORK 3\n\nTask 3" << std::endl;
+    std::cout << "HOME WORK 3\n\nTask 4" << std::endl;
 
     std::cout << "Enter decimal  N : ";
     long long N;

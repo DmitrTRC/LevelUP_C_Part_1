@@ -11,7 +11,7 @@ int main (int argc, char **argv) {
     const double UPPER_LIMIT = 1.0;
     const double LOWER_LIMIT = 0.05;
 
-    std::cout << "HOME WORK 3\n\nTask 3" << std::endl;
+    std::cout << "HOME WORK 3\n\nTask 5" << std::endl;
 
     std::cout << "Enter x in range [0.05, 1.0] : ";
     double x;
