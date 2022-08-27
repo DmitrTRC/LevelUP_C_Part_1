@@ -9,14 +9,22 @@
 
 
 //Double-Factorial tail recursion implementation
-unsigned long long double_factorial_ (int n, unsigned long long res) {
-    if (n < 2)
-        return res;
-    return double_factorial_ (n - 2, res * n);
-}
+//unsigned long long double_factorial_ (int n, unsigned long long res) {
+//    if (n < 2)
+//        return res;
+//    return double_factorial_ (n - 2, res * n);
+//}
+//
+//unsigned long long doubleFactorial (int n) {
+//    return double_factorial_ (n, n >= 0);
+//}
 
+//Double-Factorial iterative implementation
 unsigned long long doubleFactorial (int n) {
-    return double_factorial_ (n, n >= 0);
+    unsigned long long res = 1;
+    for (int i = n; i > 0; i -= 2)
+        res *= i;
+    return res;
 }
 
 // Reduce sequence f(x) = x + x^3 / ( 2*3 ) + (1 * 3 * x^5)/(2*4*5) + ... +((2*n -1)!!x^(2*n + 1))/((2*n)!!(2*n + 1)) + ...
