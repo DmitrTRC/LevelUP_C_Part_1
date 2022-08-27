@@ -1,11 +1,10 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
+#include "Task2.hpp"
 
 #include <iostream>
 #include <vector>
-
-#include "Task2.hpp"
 
 
 auto getMaxAreaFigure (const std::vector<Figure *> &figures) {

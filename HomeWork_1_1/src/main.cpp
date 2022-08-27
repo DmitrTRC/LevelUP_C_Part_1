@@ -1,8 +1,9 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
-#include <cstdio>
 #include "task1.cpp"
+
+#include <cstdio>
 
 
 int main (int argc, char *argv[]) {

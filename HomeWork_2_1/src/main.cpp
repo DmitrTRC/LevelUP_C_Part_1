@@ -2,9 +2,9 @@
 // Created by Dmitry Morozov on 21/8/22.
 //
 
-#include <iostream>
-
 #include "Task1.hpp"
+
+#include <iostream>
 
 
 int main (int argc, char **argv) {

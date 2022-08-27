@@ -1,14 +1,15 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
-#include <cmath>
-#include <utility>
 
 #include "Task2.hpp"
 
+#include <cmath>
+#include <utility>
+
 
 //Figure: Abstract class
-Figure::Figure (std::string name, double dimension) : name_ (std::move(name)), dimension_ (dimension) {}
+Figure::Figure (std::string name, double dimension) : name_ (std::move (name)), dimension_ (dimension) {}
 
 std::string Figure::getName () const {
     return name_;
