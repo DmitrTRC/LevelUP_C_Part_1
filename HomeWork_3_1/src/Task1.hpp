@@ -5,5 +5,6 @@
 #ifndef LEVELUP_C_PARTI_FEATURE_HW2_TASK1_HPP
 #define LEVELUP_C_PARTI_FEATURE_HW2_TASK1_HPP
 
+size_t getNaturalLength (unsigned long long);
 
 #endif //LEVELUP_C_PARTI_FEATURE_HW2_TASK1_HPP
