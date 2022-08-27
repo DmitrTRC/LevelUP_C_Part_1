@@ -8,8 +8,8 @@
 #include <functional>
 
 
-// Calculate sum of number sequence f(x) = x/ 2 + 2/3 x^2 + 3/4 x^3 + ... + (n - 1) / n x^n Epsilion = 0.00001
-// for x from 0 to n
+// Calculate sum of number sequence f(x) = x/ 2 + 2/3 x^2 + 3/4 x^3 + ... + (n - 1) / n x^n Epsilon = 0.00001
+
 
 double sequence_sum (double x) {
 
