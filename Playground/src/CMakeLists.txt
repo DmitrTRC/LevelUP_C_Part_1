@@ -9,11 +9,13 @@ set(CMAKE_CXX_STANDARD 20)
 set(HEADER_FILES
         Playground.hpp
         rfact.hpp
+        r_fib.hpp
         )
 
 set(SOURCE_FILES
         Playground.cpp
         rfact.cpp
+        r_fib.cpp
         )
 
 add_library(Playground_lib ${SOURCE_FILES} ${HEADER_FILES})

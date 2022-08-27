@@ -9,6 +9,7 @@ message(STATUS "Playground Source DIR : ${Playground_SOURCE_DIR}")
 add_executable(Playground_Tests_run
         test_demo.cpp
         test_rfact.cpp
+        test_r_fib.cpp
         )
 
 target_link_libraries(Playground_Tests_run
