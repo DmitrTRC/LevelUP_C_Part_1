@@ -16,7 +16,7 @@ int main (int argc, char **argv) {
     unsigned a, b, c;
     std::cin >> a >> b >> c;
 
-    std::cout << std::endl << "Th Least Common Divisor (lsd) is : " << lcd (a, b, c) << std::endl;
+    std::cout << std::endl << "The Least Common Divisor (lsd) is : " << lcd (a, b, c) << std::endl;
 
 
     return 0;

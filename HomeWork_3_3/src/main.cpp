@@ -10,13 +10,14 @@
 int main (int argc, char **argv) {
 
 
-    std::cout << "HOME WORK 3\n\nTask 2" << std::endl;
+    std::cout << "HOME WORK 3\n\nTask 3" << std::endl;
 
-    std::cout << "Enter natural a, b, c  : ";
-    unsigned a, b, c;
-    std::cin >> a >> b >> c;
+    std::cout << "Enter natural N : ";
+    unsigned N;
+    std::cin >> N;
 
-    std::cout << std::endl << "Th Least Common Divisor (lsd) is : " << lcd (a, b, c) << std::endl;
+    std::cout << "The given number is " << N << " and the swapped number is " << swap_first_last_digits (N)
+              << std::endl;
 
 
     return 0;
