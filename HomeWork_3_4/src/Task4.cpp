@@ -18,10 +18,10 @@ auto decToBinary (unsigned number) -> unsigned {
     unsigned result = 0;
     int i = 0;
 
-    while (number != 0) {
+    while (number) {
         result += static_cast<unsigned>((number % 2) * pow (10, i));
         ++i;
-        number /= 2;
+        number >>= 1;
     }
 
     return result;
