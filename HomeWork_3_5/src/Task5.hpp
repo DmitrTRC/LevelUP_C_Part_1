@@ -8,6 +8,5 @@
 
 auto reduceSequence (double) -> long double;
 
-void run_fact ();
 
 #endif //LEVELUP_C_PARTI_DEV_TASK5_HPP

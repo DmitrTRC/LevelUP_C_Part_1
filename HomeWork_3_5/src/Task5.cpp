@@ -6,11 +6,9 @@
 
 #include <cmath>
 #include <functional>
-#include <iostream>
 
 
-
-//Double-Factorial tail recursion implementation
+/* A lambda function that calculates the double factorial of a number. */
 auto doubleFactorial = [] (int n) -> long double {
     std::function<long double (int, long double)> double_factorial_ =
             [ &double_factorial_ ] (int n, long double res) -> long double {
@@ -21,8 +19,6 @@ auto doubleFactorial = [] (int n) -> long double {
             };
     return double_factorial_ (n, n >= 0);
 };
-
-
 
 
 /**
