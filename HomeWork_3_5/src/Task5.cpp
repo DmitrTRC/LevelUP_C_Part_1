@@ -6,6 +6,7 @@
 
 #include <cmath>
 #include <functional>
+#include <iostream>
 
 
 /**
@@ -69,28 +70,37 @@ unsigned long long doubleFactorial (int n) {
  *
  * @return the sum of the series.
  */
-auto reduceSequence (double x) -> double {
+auto reduceSequence (double x) -> long double {
     const double EPSILON = 1e-5;
-    double result = 0;
+    long double result = 0;
     int iteration = 1;
+    double prev_n = 0;
     double current;
-
+    //TODO Limit : fabs( numerator - prev_n) < EPSILON
     do {
         auto numerator = static_cast<double>(doubleFactorial (2 * iteration - 1)) * pow (x, 2 * iteration + 1);
         auto denominator = doubleFactorial (2 * iteration) * (2 * iteration + 1);
 
+        std::cout << "Numerator :  " << numerator << "\tDenominator : " << denominator << " \t\tResult : " << result;
+
+
         current = numerator / static_cast<double>(denominator);
+        std::cout << "\t\tCurrent : " << current << std::endl;
 
+        std::cout << "Iteration " << iteration << " : " << current << std::endl;
+        result += current;
+        std::cout << "Delta  : " << current - prev << std::endl;
+        prev = current;
+        ++iteration;
 
-    } while (current < EPSILON);
+    } while (fabs (current) > EPSILON);
 
 
     result += current;
     ++iteration;
-}
 
-return
-result;
+
+    return result;
 
 
 }

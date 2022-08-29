@@ -9,6 +9,6 @@ unsigned long long double_factorial_ (int, unsigned long long);
 
 unsigned long long doubleFactorial (int);
 
-auto reduceSequence (double) -> double;
+auto reduceSequence (double) -> long double;
 
 #endif //LEVELUP_C_PARTI_DEV_TASK5_HPP
