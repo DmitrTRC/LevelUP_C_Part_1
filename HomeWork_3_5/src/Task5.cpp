@@ -73,22 +73,24 @@ auto reduceSequence (double x) -> double {
     const double EPSILON = 1e-5;
     double result = 0;
     int iteration = 1;
+    double current;
 
-    while (true) {
+    do {
         auto numerator = static_cast<double>(doubleFactorial (2 * iteration - 1)) * pow (x, 2 * iteration + 1);
         auto denominator = doubleFactorial (2 * iteration) * (2 * iteration + 1);
 
-        double current = numerator / static_cast<double>(denominator);
+        current = numerator / static_cast<double>(denominator);
 
-        if (current < EPSILON) {
-            break;
-        }
 
-        result += current;
-        ++iteration;
-    }
+    } while (current < EPSILON);
 
-    return result;
+
+    result += current;
+    ++iteration;
+}
+
+return
+result;
 
 
 }
