@@ -28,11 +28,16 @@ int main (int argc, char **argv) {
 
 //debug
     int j = 0;
-    for (double i = 0.8; i < 1; i += 0.1, j++) {
-        std::cout << "Iter : " << j << "\t\tx = " << i << " : " << reduceSequence (i) << std::endl;
+    double prev = 0;
+    for (double i = 0.05; i <= 1; i += 0.05, j++) {
+        auto res = reduceSequence (i);
+        std::cout << "Iter : " << j << "\t\tx = " << i << " : " << res;
+        std::cout << "\t\tDiff : " << res - prev << std::endl;
 
 
     }
+
+    run_fact ();
 
     return 0;
 }
