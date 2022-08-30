@@ -8,6 +8,7 @@
 #include <functional>
 
 
+
 /* A lambda function that calculates the double factorial of a number. */
 auto doubleFactorial = [] (int n) -> long double {
     std::function<long double (int, long double)> double_factorial_ =
@@ -36,7 +37,7 @@ auto doubleFactorial = [] (int n) -> long double {
  */
 auto reduceSequence (double x) -> long double { //FIXME: wrong result
     const double EPSILON = 1e-5;
-    long double result = 0;
+    long double result = x;
     int iteration = 1;
     long double current = 1;
 
@@ -44,6 +45,7 @@ auto reduceSequence (double x) -> long double { //FIXME: wrong result
         long double numerator = doubleFactorial (2 * iteration - 1) * pow (x, 2 * iteration + 1);
         auto denominator = doubleFactorial (2 * iteration) * (2 * iteration + 1);
         current = numerator / denominator;
+
         result += current;
         ++iteration;
     }

@@ -13,7 +13,7 @@ int main () {
     double amount = 1;
     scanf ("%lf", &x);
 
-    if (x <= 0.05 || x >= 1) printf ("Error");
+    if (x <= 0.05 || x > 1) printf ("Error");
     else {
         int n = 1;
         double first_value_even = 1;
