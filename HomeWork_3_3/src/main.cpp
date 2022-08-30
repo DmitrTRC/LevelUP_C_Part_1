@@ -16,7 +16,7 @@ int main (int argc, char **argv) {
     unsigned N;
     std::cin >> N;
 
-    std::cout << "The given number is " << N << " and the swapped number is " << swap_first_last_digits (N)
+    std::cout << "The given number is " << N << " and the swapped number is : " << swap_first_last_digits (N)
               << std::endl;
 
 

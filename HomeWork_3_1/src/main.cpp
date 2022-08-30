@@ -11,6 +11,7 @@ int main (int argc, char **argv) {
 
 
     std::cout << "HOME WORK 3\n\nTask 1" << std::endl;
+
     std::cout << "Enter natural N  : ";
     int n;
     std::cin >> n;

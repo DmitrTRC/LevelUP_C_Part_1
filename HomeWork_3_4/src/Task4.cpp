@@ -5,7 +5,6 @@
 #include "Task4.hpp"
 
 #include <cmath>
-#include <functional>
 
 
 /**
