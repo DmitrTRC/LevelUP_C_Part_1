@@ -20,7 +20,7 @@ auto lcd (unsigned a, unsigned b, unsigned c) -> unsigned {
     unsigned lcd_ = 1;
     unsigned min_value = a < b ? a : b < c ? b : c;
 
-    for (unsigned i = 1; i <= min_value; ++i) {
+    for (unsigned i = min_value; i > 1; --i) {
         if (a % i == 0 && b % i == 0 && c % i == 0) {
             lcd_ = i;
         }
