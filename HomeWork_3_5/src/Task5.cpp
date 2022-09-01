@@ -8,7 +8,6 @@
 #include <functional>
 
 
-
 /* A lambda function that calculates the double factorial of a number. */
 auto doubleFactorial = [] (int n) -> long double {
     std::function<long double (int, long double)> double_factorial_ =
@@ -55,3 +54,6 @@ auto reduceSequence (double x) -> long double { //FIXME: wrong result
     return result;
 }
 
+long double test_factorial (int x_) {
+    return doubleFactorial (x_);
+}

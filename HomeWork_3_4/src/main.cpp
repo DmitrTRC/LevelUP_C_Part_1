@@ -17,6 +17,7 @@ int main (int argc, char **argv) {
     std::cin >> N;
 
     std::cout << "Decimal number :  " << N << " equal binary : " << decToBinary (N) << std::endl;
+    std::cout << "Decimal number :  " << N << " equal binary : " << dec2bin (N) << std::endl;
 
 
     return 0;

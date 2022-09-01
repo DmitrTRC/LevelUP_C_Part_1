@@ -8,5 +8,6 @@
 
 auto reduceSequence (double) -> long double;
 
+long double test_factorial (int);
 
 #endif //LEVELUP_C_PARTI_DEV_TASK5_HPP

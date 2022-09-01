@@ -5,6 +5,11 @@
 #ifndef LEVELUP_C_PARTI_DEV_TASK4_HPP
 #define LEVELUP_C_PARTI_DEV_TASK4_HPP
 
+#include <string>
+
+
 auto decToBinary (unsigned) -> unsigned;
+
+auto dec2bin (unsigned) -> std::string;
 
 #endif //LEVELUP_C_PARTI_DEV_TASK4_HPP

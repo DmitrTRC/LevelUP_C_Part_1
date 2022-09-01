@@ -4,6 +4,7 @@
 
 #include "Task4.hpp"
 
+#include <bitset>
 #include <cmath>
 
 
@@ -28,4 +29,15 @@ auto decToBinary (unsigned number) -> unsigned {
     return result;
 }
 
+
+/**
+ * It converts a decimal number to a binary string
+ *
+ * @param number The number to convert to binary.
+ *
+ * @return A string of the binary representation of the number.
+ */
+auto dec2bin (unsigned number) -> std::string {
+    return std::bitset<sizeof (number) * 8> (number).to_string ();
+}
 
