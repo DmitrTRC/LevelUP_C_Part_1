@@ -53,7 +53,3 @@ auto reduceSequence (double x) -> long double { //FIXME: wrong result
 
     return result;
 }
-
-long double test_factorial (int x_) {
-    return doubleFactorial (x_);
-}
