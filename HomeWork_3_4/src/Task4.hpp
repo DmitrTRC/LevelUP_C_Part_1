@@ -10,6 +10,9 @@
 
 auto decToBinary (unsigned) -> unsigned;
 
-auto dec2bin (unsigned) -> std::string;
+auto dec2bin_u (unsigned) -> unsigned;
+
+auto dec2bin_s (unsigned) -> std::string;
+
 
 #endif //LEVELUP_C_PARTI_DEV_TASK4_HPP

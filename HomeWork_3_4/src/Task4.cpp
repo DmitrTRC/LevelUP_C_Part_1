@@ -37,7 +37,24 @@ auto decToBinary (unsigned number) -> unsigned {
  *
  * @return A string of the binary representation of the number.
  */
-auto dec2bin (unsigned number) -> std::string {
+auto dec2bin_s (unsigned number) -> std::string {
     return std::bitset<sizeof (number) * 8> (number).to_string ();
 }
+
+/**
+ * If the number is zero, return zero, otherwise return the number modulo 2 plus 10 times the result of the function called
+ * on the number shifted right by one.
+ *
+ * @param number the number to convert
+ *
+ * @return The binary representation of the number.
+ */
+auto dec2bin_u (unsigned number) -> unsigned {
+    if (number == 0) {
+        return 0;
+    }
+    return (number % 2) + 10 * dec2bin_u (number >> 1);
+
+}
+
 
