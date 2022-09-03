@@ -34,7 +34,7 @@ auto doubleFactorial = [] (int n) -> long double {
  *
  * @return the sum of the series.
  */
-auto reduceSequence (double x) -> long double { //FIXME: wrong result
+auto reduceSequence (double x) -> long double {
     const double EPSILON = 1e-5;
     long double result = x;
     int iteration = 1;
