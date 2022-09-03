@@ -9,6 +9,12 @@
 #include <iostream>
 
 
+/**
+ * It takes an array and its size as arguments and prints the array's elements to the screen
+ *
+ * @param array the array to be sorted
+ * @param n the number of elements in the array
+ */
 void print_array (int *array, int n) {
 
     for (int i = 0; i < n; ++i) {
