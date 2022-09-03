@@ -1,7 +1,7 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
-#import <cmath>
+#include <cmath>
 
 
 /**
@@ -11,6 +11,6 @@
  *
  * @return The number of digits in the number.
  */
-size_t getNaturalLength (unsigned long long n) {
-    return (size_t) log10 (n) + 1;
+unsigned getNaturalLength (unsigned long long n) {
+    return (size_t) std::log10 (n) + 1;
 }
