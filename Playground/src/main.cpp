@@ -1,17 +1,32 @@
-#include <stdio.h>
+/*
+    Task: the sum of the row with an accuracy of 10^-5, where 0.05 < x < 1
+*/
+
+#include<math.h>
+#include<stdio.h>
 
 
 int main () {
-    int n;
-    printf ("Input number: ");
-    scanf ("%d", &n);
-    int sum = 0;
-    while (n) {
-        sum += 1;
-        n /= 10;
-    }
+    printf ("Enter the x in the range 0.05 < x < 1: ");
+    double x, eps = 1e-5;
+    double result = 1;
+    scanf ("%lf", &x);
+    if (x <= 0.05 || x >= 1) printf ("Error");
+    else {
+        int n = 1;
+        double amount = x;
+        int first_factorial = 1;
+        int second_factorial = 1;
 
-    printf ("%d ", n % 10);
-    printf ("Chislo tsifr ravno = %d", sum);
-    return 0;
+        while (result > eps) {
+            first_factorial *= (2 * n - 1);
+            second_factorial *= 2 * n;
+            result *= (first_factorial * pow (x, (2 * n + 1))) / (second_factorial * (2 * n + 1));
+            amount += result;
+            ++n;
+
+        }
+
+        printf ("Answer: %lf\n", amount);
+    }
 }
