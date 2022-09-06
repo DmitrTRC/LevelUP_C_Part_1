@@ -7,7 +7,14 @@
 #include <random>
 
 
-//Swap k-column with k-raw.
+/**
+ * Swap the k-th column with the k-th row
+ *
+ * @param array the array to be swapped
+ * @param k the column and row to swap
+ *
+ * @return a boolean value.
+ */
 bool Swap_matrix_col_and_row (int array[7][7], int k) {
     const int size = 7;
     if (k > size) {
@@ -22,6 +29,11 @@ bool Swap_matrix_col_and_row (int array[7][7], int k) {
     return true;
 }
 
+/**
+ * It generates a random 2D square matrix of size 7
+ *
+ * @param array the array to be filled with random numbers
+ */
 void Generate_random_2d_square_matrix (int array[7][7]) {
     const int size = 7;
 
