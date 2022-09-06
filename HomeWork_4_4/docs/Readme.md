@@ -1,9 +1,8 @@
 ### 2d-Arrays task
 
-- Given a 2d array of size 7 x 7.
+- Given a 2d array unknown size.
 
-*
-    - Вычислить сумму элементов матрицы, лежащих слева от побочной диагонали.
+* Compute the sum of the matrix elements to the left of the side diagonal.
 
 
 
