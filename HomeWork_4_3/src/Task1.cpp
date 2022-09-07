@@ -30,9 +30,10 @@ bool Swap_matrix_col_and_row (int array[7][7], int k) {
 }
 
 /**
- * It generates a random 2D square matrix of size 7
+ * This function prints a 2D array of integers
  *
- * @param array the array to be filled with random numbers
+ * @param array the 2D array to print
+ * @param size the size of the matrix
  */
 void Generate_random_2d_square_matrix (int *array, int size) {
 
