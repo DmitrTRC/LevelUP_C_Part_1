@@ -18,8 +18,9 @@
  * @param array the 2D array to print
  * @param size the size of the matrix
  */
-void print_2d_matrix (int *array, int size = 49) {
+void print_2d_matrix (const int *array, int size = 49) {
     const int row_size = static_cast<int>(std::sqrt (size));
+
     for (int i = 0; i < size; ++i) {
         std::cout << std::setw (5) << *(array + i);
         if ((i + 1) % row_size == 0) {

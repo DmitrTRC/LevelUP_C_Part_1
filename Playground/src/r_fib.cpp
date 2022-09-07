@@ -7,13 +7,9 @@
 
 
 int r_fib (int n) {
-    std::function<int (int, int)> r_fib_rec = [ &r_fib_rec ] (int n, int acc) -> int {
-        if (n == 0) {
-            return acc;
-        } else {
-            return r_fib_rec (n - 1, acc + r_fib_rec (n - 2, acc));
-        }
-
-    };
-    return r_fib_rec (n, 0);
+    if ((n == 1) || (n == 0)) {
+        return (n);
+    } else {
+        return (r_fib (n - 1) + r_fib (n - 2));
+    }
 }
