@@ -34,16 +34,14 @@ bool Swap_matrix_col_and_row (int array[7][7], int k) {
  *
  * @param array the array to be filled with random numbers
  */
-void Generate_random_2d_square_matrix (int array[7][7]) {
-    const int size = 7;
+void Generate_random_2d_square_matrix (int *array, int size) {
+
 
     std::default_random_engine generator;
     std::uniform_int_distribution<int> distribution (1975, 2021);
 
     for (int i = 0; i < size; ++i) {
-        for (int j = 0; j < size; ++j) {
-            array[i][j] = distribution (generator);
-        }
+        *(array + i) = distribution (generator);
     }
 }
 
