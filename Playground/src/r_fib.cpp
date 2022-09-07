@@ -2,7 +2,7 @@
 // Created by Dmitry Morozov on 27/8/22.
 //
 
-#include <functional>
+
 #include "r_fib.hpp"
 
 
