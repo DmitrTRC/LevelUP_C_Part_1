@@ -45,11 +45,18 @@ int main () {
             0, -1, -1, -1, -1, -1, -1, -1, -1, -1
     };
 
-
+    // Inplace definition of 2D array of doubles till side diagonal (0) positive (0.1) and after negative (-0.1)
+    std::array<std::array<double, 5>, 5> dMatrix = {
+            0.1, 0.1, 0.1, 0.1, 0,
+            0.1, 0.1, 0.1, 0, -0.1,
+            0.1, 0.1, 0, -0.1, -0.1,
+            0.1, 0, -0.1, -0.1, -0.1,
+            0, -0.1, -0.1, -0.1, -0.1
+    };
 
 
     // Print the 2D array
-    std::cout << "The given matrix: " << std::endl;
+    std::cout << "The given int matrix: " << std::endl;
     printMatrix (iMatrix);
 
 
@@ -57,6 +64,11 @@ int main () {
               << sumMatrixSideDiagonalElements (iMatrix)
               << std::endl;
 
+    std::cout << "The given float matrix: " << std::endl;
+    printMatrix (dMatrix);
 
+    std::cout << std::endl << "Sum of the elements to the left of the side diagonal: "
+              << sumMatrixSideDiagonalElements (dMatrix)
+              << std::endl;
     return 0;
 }

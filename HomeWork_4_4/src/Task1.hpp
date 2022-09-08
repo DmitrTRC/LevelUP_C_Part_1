@@ -7,8 +7,13 @@
 
 #include <array>
 
-
-// Compute the sum of the 2d-matrix elements to the left of the side diagonal
+/**
+ * @brief Compute the sum of the 2d-matrix elements to the left of the side diagonal
+ * @tparam T
+ * @tparam SIZE
+ * @param matrix
+ * @return T
+ */
 template<typename T, std::size_t SIZE>
 T sumMatrixSideDiagonalElements (std::array<std::array<T, SIZE>, SIZE> &matrix) {
     T sum = 0;
