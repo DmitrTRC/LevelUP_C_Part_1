@@ -1,6 +1,6 @@
 
 
-project(HW_4_6_run)
+project(HW_4_5_run)
 
 set(CMAKE_CXX_STANDARD 20)
 
