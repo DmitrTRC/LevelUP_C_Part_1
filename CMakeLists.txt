@@ -30,6 +30,7 @@ add_subdirectory(HomeWork_4_1)
 add_subdirectory(HomeWork_4_2)
 add_subdirectory(HomeWork_4_3)
 add_subdirectory(HomeWork_4_4)
+add_subdirectory(HomeWork_4_5)
 
 
 
