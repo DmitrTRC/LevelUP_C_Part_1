@@ -8,6 +8,7 @@
 #include <sstream>
 
 
-std::string deleteOddLengthWords (std::string &);
+bool isValidBracketsExpression (const std::string &);
+
 
 #endif //LEVELUP_C_PARTI_DEV_TASK1_HPP

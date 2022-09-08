@@ -2,20 +2,30 @@
 // Created by Dmitry Morozov on 3/9/22.
 //
 
-//Delete all words with odd length;
+// Determine if it is a valid bracket expression
 
 #include "Task1.hpp"
 
 #include <iostream>
 
 
-/**
- * This function deletes all words with odd length
- *
- * @param str the string to delete words from
- */
+void validateString (const std::string &str) {
+    std::cout << "The string " << str << " is " << (isValidBracketsExpression (str) ? "" : "not ") << "valid"
+              << std::endl;
+}
+
 int main () {
-    std::cout << "HOME WORK 4\n\nTask 5" << std::endl;
+    std::cout << "HOME WORK 4\n\nTask 6" << std::endl;
+
+    std::string str = "((()))";
+    validateString (str);
+    str = "[{{{}}}])";
+    validateString (str);
+    str = "((()";
+    validateString (str);
+    str = "{'(', ')', '[', ']', '{', '}'}";
+    validateString (str);
+
 
     return 0;
 }

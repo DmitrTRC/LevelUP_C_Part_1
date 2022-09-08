@@ -1,8 +1,8 @@
-### HW_4_5 : Strings. Task 1
+### HW_4_6 : valid bracket sequence
 
 - Given a string;
 
-* Delete all words with odd length;
+* Determine if it is a valid bracket expression.
 
 
 

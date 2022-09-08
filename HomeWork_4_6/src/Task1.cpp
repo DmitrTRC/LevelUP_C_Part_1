@@ -2,28 +2,46 @@
 // Created by Dmitry Morozov on 5/9/22.
 //
 
+
 #include "Task1.hpp"
 
-#include <sstream>
+#include <set>
+#include <stack>
 
 
 /**
- * This function deletes all words with odd length
+ * This function checks if the brackets expression is valid
  *
- * @param str the string to delete words from
- * @return std::string
+ * @param str the string to check
+ * @return bool
  */
-std::string deleteOddLengthWords (std::string &str) {
-    std::stringstream ss (str);
-    std::string word;
-    std::string result;
+bool isValidBracketsExpression (const std::string &str) {
+    std::set<char> openBrackets = {'(', '[', '{', '<'};
+    std::set<char> closeBrackets = {')', ']', '}', '>'};
+    std::stack<char> bracketsStack;
 
-    while (ss >> word) {
-        if (word.length () % 2 == 0) {
-            result += word + " ";
+    for (char c: str) {
+        if (openBrackets.find (c) != openBrackets.end ()) {
+            bracketsStack.push (c);
+        } else if (closeBrackets.find (c) != closeBrackets.end ()) {
+            if (bracketsStack.empty ()) {
+                return false;
+            }
+
+            char openBracket = bracketsStack.top ();
+            bracketsStack.pop ();
+
+            if (openBracket == '(' && c != ')') {
+                return false;
+            } else if (openBracket == '[' && c != ']') {
+                return false;
+            } else if (openBracket == '{' && c != '}') {
+                return false;
+            } else if (openBracket == '<' && c != '>') {
+                return false;
+            }
         }
     }
 
-    return result;
+    return bracketsStack.empty ();
 }
-

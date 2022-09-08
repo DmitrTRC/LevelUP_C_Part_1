@@ -1,6 +1,6 @@
 
 
-project(HW_4_5_run)
+project(HW_4_6_run)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -14,8 +14,8 @@ set(SOURCE_FILES
         Task1.cpp
         )
 
-add_library(HW_4_5_lib ${SOURCE_FILES} ${HEADER_FILES})
+add_library(HW_4_6_lib ${SOURCE_FILES} ${HEADER_FILES})
 
-add_executable(HW_4_5_run main.cpp)
+add_executable(HW_4_6_run main.cpp)
 
-target_link_libraries(HW_4_5_run HW_4_5_lib)
+target_link_libraries(HW_4_6_run HW_4_6_lib)
