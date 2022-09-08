@@ -2,12 +2,11 @@
 // Created by Dmitry Morozov on 3/9/22.
 //
 
-// Swap MAX and last negative element for M(40) array
+// Compute the sum of the 2d-matrix elements to the left of the side diagonal
 
 #include "Task1.hpp"
 
 #include <array>
-#include <cmath>
 #include <iomanip>
 #include <iostream>
 
@@ -18,22 +17,45 @@
  * @param array the 2D array to print
  * @param size the size of the matrix
  */
-void print_2d_matrix (const int *array, int size = 49) {
-    const int row_size = static_cast<int>(std::sqrt (size));
-
-    for (int i = 0; i < size; ++i) {
-        std::cout << std::setw (5) << *(array + i);
-        if ((i + 1) % row_size == 0) {
-            std::cout << std::endl;
+template<typename T, std::size_t SIZE>
+void printMatrix (std::array<std::array<T, SIZE>, SIZE> &matrix) {
+    for (auto &row: matrix) {
+        for (auto &element: row) {
+            std::cout << std::setw (4) << element;
         }
+        std::cout << std::endl;
     }
-    std::cout << std::endl;
-
 }
 
 
 int main () {
     std::cout << "HOME WORK 4\n\nTask 4" << std::endl;
+
+    // Inplace definition of 2D array of integers till side diagonal (0) positive (1) and after negative (-1)
+    std::array<std::array<int, 10>, 10> iMatrix = {
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
+            1, 1, 1, 1, 1, 1, 1, 1, 0, -1,
+            1, 1, 1, 1, 1, 1, 1, 0, -1, -1,
+            1, 1, 1, 1, 1, 1, 0, -1, -1, -1,
+            1, 1, 1, 1, 1, 0, -1, -1, -1, -1,
+            1, 1, 1, 1, 0, -1, -1, -1, -1, -1,
+            1, 1, 1, 0, -1, -1, -1, -1, -1, -1,
+            1, 1, 0, -1, -1, -1, -1, -1, -1, -1,
+            1, 0, -1, -1, -1, -1, -1, -1, -1, -1,
+            0, -1, -1, -1, -1, -1, -1, -1, -1, -1
+    };
+
+
+
+
+    // Print the 2D array
+    std::cout << "The given matrix: " << std::endl;
+    printMatrix (iMatrix);
+
+
+    std::cout << std::endl << "Sum of the elements to the left of the side diagonal: "
+              << sumMatrixSideDiagonalElements (iMatrix)
+              << std::endl;
 
 
     return 0;

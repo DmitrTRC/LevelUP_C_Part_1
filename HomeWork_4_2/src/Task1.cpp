@@ -22,6 +22,7 @@ std::array<int, 15> getIndexesOfElementsNotInArrayB (const std::array<int, 30> &
     std::array<int, 15> arrayC;
 
     int index = 0;
+
     for (int i = 0; i < arrayA.size (); ++i) {
         bool isFound = false;
         for (int j = 0; j < arrayB.size (); ++j) {
