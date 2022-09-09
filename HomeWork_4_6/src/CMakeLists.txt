@@ -7,10 +7,12 @@ set(CMAKE_CXX_STANDARD 20)
 #Build library
 
 set(HEADER_FILES
+        C_Stack.hpp
         Task1.hpp
         )
 
 set(SOURCE_FILES
+        C_Stack.cpp
         Task1.cpp
         )
 

@@ -23,8 +23,6 @@ int main () {
     validateString (str);
     str = "((()";
     validateString (str);
-    str = "{'(', ')', '[', ']', '{', '}'}";
-    validateString (str);
 
 
     return 0;
