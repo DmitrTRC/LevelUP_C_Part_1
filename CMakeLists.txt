@@ -28,7 +28,7 @@ endif ()
 
 
 #add_subdirectory(Playground) This is dev playground
-add_subdirectory(HomeWork_1_1)
+#add_subdirectory(HomeWork_1_1)
 add_subdirectory(HomeWork_1_2)
 add_subdirectory(HomeWork_2_1)
 add_subdirectory(HomeWork_2_2)
