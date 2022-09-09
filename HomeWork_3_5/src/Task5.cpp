@@ -8,7 +8,11 @@
 #include <functional>
 
 
-/* A lambda function that calculates the double factorial of a number. */
+/**
+ * @brief  lambda recursion function that calculates the double factorial of a number.
+ * @param  n - number to calculate double factorial
+ * @return double factorial of n
+ */
 auto doubleFactorial = [] (int n) -> long double {
     std::function<long double (int, long double)> double_factorial_ =
             [ &double_factorial_ ] (int n, long double res) -> long double {

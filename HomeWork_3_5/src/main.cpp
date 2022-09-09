@@ -8,7 +8,11 @@
 #include <iostream>
 
 
-int main (int argc, char **argv) {
+/**
+ * @brief Main function
+ * @return 0
+ */
+int main () {
     const double UPPER_LIMIT = 1.0;
     const double LOWER_LIMIT = 0.05;
 

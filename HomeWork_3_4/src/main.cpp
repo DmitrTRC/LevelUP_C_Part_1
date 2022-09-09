@@ -7,7 +7,11 @@
 #include <iostream>
 
 
-int main (int argc, char **argv) {
+/**
+ * @brief Main function
+ * @return 0
+ */
+int main () {
 
 
     std::cout << "HOME WORK 3\n\nTask 4" << std::endl;
