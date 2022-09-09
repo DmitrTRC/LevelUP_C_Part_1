@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 
 set(SOURCE_FILES
-        Task1.cpp
+        task1.cpp
 
         )
 
