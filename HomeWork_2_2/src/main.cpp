@@ -7,6 +7,12 @@
 #include <vector>
 
 
+/**
+ * @brief Function to print the area of the figures
+ * @param figures Vector of figures
+ * @return Maximum area
+ *
+ */
 auto getMaxAreaFigure (const std::vector<Figure *> &figures) {
 
     return *std::max_element (figures.begin (), figures.end (),
@@ -15,6 +21,11 @@ auto getMaxAreaFigure (const std::vector<Figure *> &figures) {
                               });
 };
 
+/**
+ * @brief Function to print the area of the figures
+ * @param figures Vector of figures
+ * @return void
+ */
 void printFigures (const std::vector<Figure *> &figures) {
 
     auto sortedFigures = figures;
@@ -27,7 +38,11 @@ void printFigures (const std::vector<Figure *> &figures) {
     }
 }
 
-int main (int argc, char **argv) {
+/**
+ * @brief Main function
+ * @return 0;
+ */
+int main () {
 
     std::cout << "HOME WORK 2\n\nTask 2" << std::endl;
 

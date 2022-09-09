@@ -7,6 +7,10 @@
 #include <iostream>
 
 
+/**
+ * @brief Main function. Run Task1 demo
+ * @return 0
+ */
 int main (int argc, char **argv) {
 
 

@@ -8,6 +8,9 @@
 #include <string>
 
 
+/**
+ * @brief Abstract class for figures
+ */
 class Figure {
 public:
     Figure (std::string, double);
@@ -21,6 +24,9 @@ protected:
     double dimension_;
 };
 
+/**
+ * @brief EquilateralTriangle: Concrete class
+ */
 class EquilateralTriangle : public Figure {
 public:
     explicit EquilateralTriangle (double);
@@ -28,6 +34,9 @@ public:
     [[nodiscard]] double getArea () const override;
 };
 
+/**
+ * @brief Square: Concrete class
+ */
 class Square : public Figure {
 public:
     explicit Square (double);
@@ -35,6 +44,9 @@ public:
     [[nodiscard]] double getArea () const override;
 };
 
+/**
+ * @brief Circle: Concrete class
+ */
 class Circle : public Figure {
 public:
     explicit Circle (double);

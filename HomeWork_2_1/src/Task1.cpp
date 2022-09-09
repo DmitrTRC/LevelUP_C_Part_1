@@ -3,6 +3,12 @@
 //
 #import <cmath>
 
+
+/**
+ * @brief Get equation value
+ * @param x
+ * @return Equation value
+ */
 double getEquation (double x) {
     double y;
     double numerator = 2 * cos (x - M_PI / 6) + sqrt (2);

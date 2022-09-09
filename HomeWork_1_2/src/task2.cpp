@@ -11,7 +11,10 @@
 
 long readInt (const char *);
 
-
+/**
+ * @brief Evaluate the expression
+ * @return int value of the expression
+ */
 int task2 () {
     long a = 5, c = 5;
 
