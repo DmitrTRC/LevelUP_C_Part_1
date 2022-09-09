@@ -4,13 +4,10 @@
 
 #include "gtest/gtest.h"
 
-#include "Task_1.hpp"
 
+TEST(Task1, test) {
 
-TEST(Task1, test
-) {
-
-EXPECT_EQ(1, 1);
+    EXPECT_EQ(1, 1);
 
 }
 
