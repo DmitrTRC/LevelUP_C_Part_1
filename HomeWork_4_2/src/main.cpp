@@ -25,7 +25,10 @@ void print_array (std::array<int, 15> arr) {
 
 }
 
-
+/**
+ * @brief main function
+ * @return 0
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 2" << std::endl;
 

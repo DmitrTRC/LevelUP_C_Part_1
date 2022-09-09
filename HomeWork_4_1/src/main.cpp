@@ -23,6 +23,10 @@ void print_array (int *array, int n) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief main function
+ * @return 0
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 1" << std::endl;
 

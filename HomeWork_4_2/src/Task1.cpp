@@ -16,7 +16,6 @@
  *
  * @return Array of indexes of elements in array A, that aren't in array B
  */
-
 std::array<int, 15> getIndexesOfElementsNotInArrayB (const std::array<int, 30> &arrayA,
                                                      const std::array<int, 15> &arrayB) {
     std::array<int, 15> arrayC;

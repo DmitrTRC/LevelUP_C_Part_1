@@ -31,7 +31,10 @@ void print_2d_matrix (const int *array, int size = 49) {
 
 }
 
-
+/**
+ * @brief main function
+ * @return 0
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 3" << std::endl;
 

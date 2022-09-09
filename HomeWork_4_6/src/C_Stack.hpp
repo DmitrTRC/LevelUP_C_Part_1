@@ -6,7 +6,7 @@
 #define LEVELUP_C_PARTI_DEV_C_STACK_HPP
 
 /**
- * Simple own Stack implementation
+ * @file Stack class simple implementation
  */
 class C_stack {
 public:

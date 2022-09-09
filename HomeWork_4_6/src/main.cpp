@@ -8,12 +8,20 @@
 
 #include <iostream>
 
-
+/**
+ * @brief Validate brackets
+ * @param str String to validate
+ * @return void
+ */
 void validateString (const std::string &str) {
     std::cout << "The string " << str << " is " << (isValidBracketsExpression (str) ? "" : "not ") << "valid"
               << std::endl;
 }
 
+/**
+ * @brief Main function
+ * @return int
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 6" << std::endl;
 

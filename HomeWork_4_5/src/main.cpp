@@ -10,9 +10,8 @@
 
 
 /**
- * This program deletes all words with odd length
- *
- * @param str the string to delete words from
+ * @brief Main function
+ * @return 0
  */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 5" << std::endl;

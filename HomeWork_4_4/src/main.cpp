@@ -27,7 +27,10 @@ void printMatrix (std::array<std::array<T, SIZE>, SIZE> &matrix) {
     }
 }
 
-
+/**
+ * @brief main function
+ * @return 0
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 4" << std::endl;
 
