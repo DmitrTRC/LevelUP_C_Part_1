@@ -1,7 +1,7 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
-#include "task1.cpp"
+#include "Task1.hpp"
 
 #include <cstdio>
 

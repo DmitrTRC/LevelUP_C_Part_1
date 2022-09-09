@@ -1,4 +1,8 @@
+//
+// Created by Dmitry Morozov on 9/9/22.
+//
 
+#include "Task1.hpp"
 
 #include <cstdio>
 
@@ -37,7 +41,7 @@ void task1 () {
     printf (" y = %f\n", y);
     ++b;
     z = (float) ((float) (a % 2) - (x + (float) b) / (float) c + (x - y) / (float) (a - 1) +
-                 (float) 1 / 4 * (float) a - y + b / 3.);
+            (float) 1 / 4 * (float) a - y + b / 3.);
     y++;
     printf (" a = %d, b = %d, c = %d, x = %f, y = %f, z = %f\n", a, b, c, x, y, z);
 }
