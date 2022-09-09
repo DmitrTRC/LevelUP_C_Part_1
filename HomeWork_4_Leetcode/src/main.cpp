@@ -11,7 +11,10 @@
 
 #include <iostream>
 
-
+/**
+ * @brief Main function
+ * @return 0
+ */
 int main () {
     std::cout << "HOME WORK 4\n\nTask: Leetcode problems" << std::endl;
 
@@ -27,6 +30,9 @@ int main () {
     return 0;
 }
 
+/**
+ * Demo for Task 1
+ */
 void demoT1 () {
     std::vector<int> nums = {2, 2, 7, 3, 3, 4, 6, 6, 4, 5, 5};
 
@@ -36,6 +42,9 @@ void demoT1 () {
     std::cout << "Single number is: " << solution->singleNumber (nums) << std::endl;
 }
 
+/**
+ * Demo for Task 2
+ */
 void demoT2 () {
     std::vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
@@ -45,6 +54,9 @@ void demoT2 () {
     std::cout << "Single number is: " << solution->singleNumber (nums) << std::endl;
 }
 
+/**
+ * Demo for Task 3
+ */
 void demoT3 () {
     std::vector<int> nums = {1, 2, 1, 5, 3, 7, 2, 3, 5, 9};
 
@@ -52,5 +64,5 @@ void demoT3 () {
 
     auto solution = new Leetcode_3::Task3;
     std::cout << "Single numbers are: " << solution->singleNumber (nums).at (0) << " and "
-              << solution->singleNumber (nums).at (1) << std::endl;
+            << solution->singleNumber (nums).at (1) << std::endl;
 }

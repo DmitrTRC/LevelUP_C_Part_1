@@ -7,8 +7,12 @@
 #include <map>
 #include <vector>
 
-
-///Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.
+/**
+ * Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice.
+ * Find the two elements that appear only once. You can return the answer in any order.
+ * @param nums
+ * @return std::vector<int>
+ */
 std::vector<int> Leetcode_3::Task3::singleNumber (std::vector<int> &nums) {
     std::map<int, int> frequency;
     std::vector<int> res;

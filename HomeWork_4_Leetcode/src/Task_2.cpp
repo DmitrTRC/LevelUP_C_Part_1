@@ -7,9 +7,12 @@
 #include <vector>
 
 
-/// Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+/**
+ * Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+ * @param nums
+ * @return int
+ */
 int Leetcode_2::Task2::singleNumber (std::vector<int> &nums) {
-
     std::sort (nums.begin (), nums.end ());
     int counter{0};
     int cur_n = nums.at (0);
