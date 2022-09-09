@@ -4,15 +4,29 @@
 
 #include "C_Stack.hpp"
 
-
+/**
+ * Constructor
+ * @param
+ * @return
+ */
 C_stack::C_stack () : head (nullptr) {};
 
+/**
+ * Destructor
+ * @param
+ * @return
+ */
 C_stack::~C_stack () {
     while (!empty ()) {
         pop ();
     }
 }
 
+/**
+ * Pushes the element to the stack
+ * @param value the value to push
+ * @return
+ */
 void C_stack::push (char &value) {
     Node *newNode = new Node;
     newNode->value = value;
@@ -20,6 +34,11 @@ void C_stack::push (char &value) {
     head = newNode;
 }
 
+/**
+ * Pops the element from the stack
+ * @param
+ * @return
+ */
 void C_stack::pop () {
     if (empty ()) {
         return;
@@ -30,10 +49,20 @@ void C_stack::pop () {
     delete temp;
 }
 
+/**
+ * Returns the top element of the stack
+ * @param
+ * @return char element
+ */
 char C_stack::top () const {
     return head->value;
 }
 
+/**
+ * Checks if the stack is empty
+ * @param
+ * @return bool
+ */
 bool C_stack::empty () const {
     return head == nullptr;
 }

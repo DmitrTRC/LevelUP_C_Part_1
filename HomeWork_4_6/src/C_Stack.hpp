@@ -5,7 +5,9 @@
 #ifndef LEVELUP_C_PARTI_DEV_C_STACK_HPP
 #define LEVELUP_C_PARTI_DEV_C_STACK_HPP
 
-
+/**
+ * Simple own Stack implementation
+ */
 class C_stack {
 public:
     C_stack ();
@@ -18,7 +20,7 @@ public:
 
     [[nodiscard]] char top () const;
 
-    bool empty () const;
+    [[nodiscard]] bool empty () const;
 
 private:
     struct Node {
