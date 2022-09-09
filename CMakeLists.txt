@@ -27,7 +27,7 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 endif ()
 
 
-#add_subdirectory(Playground)
+#add_subdirectory(Playground) This is dev playground
 add_subdirectory(HomeWork_1_1)
 add_subdirectory(HomeWork_1_2)
 add_subdirectory(HomeWork_2_1)
