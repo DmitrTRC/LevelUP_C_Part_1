@@ -5,8 +5,11 @@
 
 #include <cstdio>
 
-
-int main (int argc, char *argv[]) {
+/**
+ * @brief Main function
+ * @return 0
+ */
+int main () {
 
     printf ("HOME WORK 1\n\nTask 1\n");
     fflush (stdin);

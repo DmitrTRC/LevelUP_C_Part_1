@@ -5,8 +5,11 @@
 
 #include <cstdio>
 
-
-int main (int argc, char *argv[]) {
+/**
+ * @brief Main function
+ * @return 0
+ */
+int main () {
 
 
     printf ("\n\nTask 2\n");
