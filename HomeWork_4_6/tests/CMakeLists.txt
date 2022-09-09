@@ -2,19 +2,19 @@ enable_testing()
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-include_directories(${HW_4_6_SOURCE_DIR}/src)
-message(STATUS "HW_4_6 Source DIR : ${HW_4_6_SOURCE_DIR}")
+include_directories(${HW_4_Leet_SOURCE_DIR}/src)
+message(STATUS "HW_4_Leet Source DIR : ${HW_4_Leet_SOURCE_DIR}")
 
 
-add_executable(HW_4_6_Tests_run
+add_executable(HW_4_Leet_Tests_run
         test_task1.cpp
         )
 
-target_link_libraries(HW_4_6_Tests_run
+target_link_libraries(HW_4_Leet_Tests_run
         gtest
         gtest_main
-        HW_4_6_lib
+        HW_4_Leet_lib
         )
 
 include(GoogleTest)
-gtest_discover_tests(HW_4_6_Tests_run)
+gtest_discover_tests(HW_4_Leet_Tests_run)
