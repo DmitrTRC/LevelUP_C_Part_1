@@ -4,6 +4,7 @@
 
 #include "C_Stack.hpp"
 
+
 /**
  * Constructor
  * @param
@@ -17,7 +18,7 @@ C_stack::C_stack () : head (nullptr) {};
  * @return
  */
 C_stack::~C_stack () {
-    while (!empty ()) {
+    while (!isEmpty ()) {
         pop ();
     }
 }
@@ -27,7 +28,7 @@ C_stack::~C_stack () {
  * @param value the value to push
  * @return
  */
-void C_stack::push (char &value) {
+void C_stack::push (char value) {
     Node *newNode = new Node;
     newNode->value = value;
     newNode->next = head;
@@ -40,7 +41,7 @@ void C_stack::push (char &value) {
  * @return
  */
 void C_stack::pop () {
-    if (empty ()) {
+    if (isEmpty ()) {
         return;
     }
 
@@ -63,7 +64,7 @@ char C_stack::top () const {
  * @param
  * @return bool
  */
-bool C_stack::empty () const {
+bool C_stack::isEmpty () const {
     return head == nullptr;
 }
 
