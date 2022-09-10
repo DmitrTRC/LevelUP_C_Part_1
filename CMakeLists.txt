@@ -16,25 +16,11 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 
-
-
 #add_subdirectory(Playground) This is dev playground
-add_subdirectory(HomeWork_1_1)
-add_subdirectory(HomeWork_1_2)
-add_subdirectory(HomeWork_2_1)
-add_subdirectory(HomeWork_2_2)
-add_subdirectory(HomeWork_3_1)
-add_subdirectory(HomeWork_3_2)
-add_subdirectory(HomeWork_3_3)
-add_subdirectory(HomeWork_3_4)
-add_subdirectory(HomeWork_3_5)
-add_subdirectory(HomeWork_4_1)
-add_subdirectory(HomeWork_4_2)
-add_subdirectory(HomeWork_4_3)
-add_subdirectory(HomeWork_4_4)
-add_subdirectory(HomeWork_4_5)
-add_subdirectory(HomeWork_4_6)
-add_subdirectory(HomeWork_4_Leetcode)
+add_subdirectory(HomeWork_Week_1)
+add_subdirectory(HomeWork_Week_2)
+add_subdirectory(HomeWork_Week_3)
+add_subdirectory(HomeWork_Week_4)
 
 
 
