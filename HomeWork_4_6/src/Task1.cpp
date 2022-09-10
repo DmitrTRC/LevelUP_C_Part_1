@@ -34,8 +34,8 @@ bool isValidBracketsExpression (const std::string &str) {
                 return false;
             }
 
-            char openBracket = bracketsStack.top ();
-            bracketsStack.pop ();
+            char openBracket = bracketsStack->top ();
+            bracketsStack->pop ();
 
             if (bracketsMap[openBracket] != c) {
                 return false;
@@ -43,5 +43,5 @@ bool isValidBracketsExpression (const std::string &str) {
         }
 
     }
-    return bracketsStack.empty ();
+    return bracketsStack->isEmpty ();
 }
