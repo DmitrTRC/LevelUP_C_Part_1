@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 
-#include "Task1.hpp"
+#include "shared/get_length.hpp"
 
 
 /**

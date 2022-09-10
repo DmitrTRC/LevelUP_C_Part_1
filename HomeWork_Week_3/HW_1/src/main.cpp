@@ -2,9 +2,10 @@
 // Created by Dmitry Morozov on 21/8/22.
 //
 
-#include "Task1.hpp"
+#include "shared/get_length.hpp"
 
 #include <iostream>
+
 
 /**
  * @brief Main function

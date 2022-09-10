@@ -1,6 +1,8 @@
 //
 // Created by Dmitry Morozov on 21/8/22.
 //
+#include "shared/get_length.hpp"
+
 #include <cmath>
 
 
