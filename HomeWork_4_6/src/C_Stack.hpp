@@ -14,13 +14,13 @@ public:
 
     ~C_stack ();
 
-    void push (char &);
+    void push (char);
 
     void pop ();
 
     [[nodiscard]] char top () const;
 
-    [[nodiscard]] bool empty () const;
+    [[nodiscard]] bool isEmpty () const;
 
 private:
     struct Node {

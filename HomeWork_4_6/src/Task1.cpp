@@ -2,12 +2,11 @@
 // Created by Dmitry Morozov on 5/9/22.
 //
 
-
+#include "C_Stack.hpp"
 #include "Task1.hpp"
 
-#include <set>
+
 #include <map>
-#include <stack>
 
 
 /**
@@ -23,14 +22,15 @@ bool isValidBracketsExpression (const std::string &str) {
             {'{', '}'},
             {'<', '>'}
     };
-    std::stack<char> bracketsStack;
+
+    auto bracketsStack = new C_stack;
 
     for (char c: str) {
         auto it = bracketsMap.find (c);
         if (it != bracketsMap.end ()) {
-            bracketsStack.push (it->first);
+            bracketsStack->push (it->first);
         } else {
-            if (bracketsStack.empty ()) {
+            if (bracketsStack->isEmpty ()) {
                 return false;
             }
 
