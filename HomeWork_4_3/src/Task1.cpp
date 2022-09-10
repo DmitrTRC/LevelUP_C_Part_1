@@ -16,7 +16,7 @@
  * @return a boolean value.
  */
 bool Swap_matrix_col_and_row (int array[7][7], int k) {
-    const int size = 7;
+    const int size = 6;
     if (k > size) {
         return false;
     }
