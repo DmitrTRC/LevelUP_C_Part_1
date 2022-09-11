@@ -4,7 +4,7 @@
 
 // Compute the sum of the 2d-matrix elements to the left of the side diagonal
 
-#include "Task1.hpp"
+#include "shared/matrix_sod.hpp"
 
 #include <array>
 #include <iomanip>
