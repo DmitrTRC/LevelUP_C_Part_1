@@ -4,7 +4,7 @@
 
 //Delete all words with odd length;
 
-#include "Task1.hpp"
+#include "shared/get_even_string.hpp"
 
 #include <iostream>
 

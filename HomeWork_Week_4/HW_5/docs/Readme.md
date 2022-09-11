@@ -3,6 +3,3 @@
 - Given a string;
 
 * Delete all words with odd length;
-
-
-
