@@ -31,14 +31,14 @@ target_include_directories(HW_x_x_Lib
 
 # Add an executable with the above sources
 add_executable(
-        HW_1_RUN
+        HW_x_RUN
         src/main.cpp
 )
 
 # link the new hello_library target with the hello_binary target
-target_link_libraries(HW_1_RUN
+target_link_libraries(HW_x_RUN
         PRIVATE
-        get_length::lib
+        xxxxx::lib
         )
 
 # Tests

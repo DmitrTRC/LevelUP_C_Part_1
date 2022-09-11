@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 
-#include "Task2.hpp"
+#include "shared/lcd.hpp"
 
 
 TEST (Task2, lcd) {
