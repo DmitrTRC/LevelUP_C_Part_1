@@ -2,7 +2,7 @@
 // Created by Dmitry Morozov on 27/8/22.
 //
 
-#include "Task4.hpp"
+#include "shared/dec2bin.hpp"
 
 #include <bitset>
 #include <cmath>
