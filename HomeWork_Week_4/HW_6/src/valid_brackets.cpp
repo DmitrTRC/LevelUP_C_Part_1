@@ -2,8 +2,8 @@
 // Created by Dmitry Morozov on 5/9/22.
 //
 
-#include "C_Stack.hpp"
-#include "Task1.hpp"
+#include "shared/C_Stack.hpp"
+#include "shared/valid_brackets.hpp"
 
 
 #include <map>
