@@ -2,18 +2,17 @@ enable_testing()
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-include_directories(${HW_4_2_SOURCE_DIR}/src)
-message(STATUS "HW_4_2 Source DIR : ${HW_4_2_SOURCE_DIR}")
+include_directories(${HW_4_2_Lib_SOURCE_DIR}/include/)
+message(STATUS "HW_4_2_Lib Source DIR : ${HW_4_2_Lib_SOURCE_DIR}")
 
 
 add_executable(HW_4_2_Tests_run
-        test_task1.cpp
+        arrDiff_test.cpp
         )
 
 target_link_libraries(HW_4_2_Tests_run
-        gtest
         gtest_main
-        HW_4_2_lib
+        arr_diff::lib
         )
 
 include(GoogleTest)

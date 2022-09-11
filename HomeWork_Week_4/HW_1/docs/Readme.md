@@ -1,5 +1,3 @@
-### HW_x_x
+### HW_4_1 Swap elements
 
-- Find The Least Common Divisor
-
-* Include 1 if not any other divisor is found
+- Swap MAX and last negative element for M(40) array.

@@ -4,7 +4,7 @@
 
 // Swap MAX and last negative element for M(40) array
 
-#include "Task1.hpp"
+#include "shared/arr_diff.hpp"
 
 #include <array>
 #include <iostream>

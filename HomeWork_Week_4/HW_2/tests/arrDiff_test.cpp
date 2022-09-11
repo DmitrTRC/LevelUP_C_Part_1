@@ -4,10 +4,10 @@
 
 #include "gtest/gtest.h"
 
-#include "shared/lcd.hpp"
+#include "shared/arr_diff.hpp"
 
 
-TEST (Taskx, xxx) {
+TEST (ArrayDifference, array_diff) {
     EXPECT_EQ (1, 1);
 
 }

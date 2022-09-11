@@ -1,11 +1,11 @@
 
 
-project(HW_x_x_Lib)
+project(HW_4_2_Lib)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${HW_x_x_Lib_SOURCE_DIR}/bin)
-message(STATUS "HW_x_x Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${HW_4_2_Lib_SOURCE_DIR}/bin)
+message(STATUS "HW_4_2 Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 
 ############################################################
@@ -14,13 +14,13 @@ message(STATUS "HW_x_x Output directory: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 #Generate the shared library from the library sources
 
-add_library(HW_x_x_Lib SHARED
-        src/xxxx.cpp
+add_library(HW_4_2_Lib SHARED
+        src/arr_diff.cpp
         )
 
-add_library(LNAME::lib ALIAS HW_x_x_Lib)
+add_library(arr_diff::lib ALIAS HW_4_2_Lib)
 
-target_include_directories(HW_x_x_Lib
+target_include_directories(HW_4_2_Lib
         PUBLIC
         ${PROJECT_SOURCE_DIR}/include
         )
@@ -31,14 +31,14 @@ target_include_directories(HW_x_x_Lib
 
 # Add an executable with the above sources
 add_executable(
-        HW_x_x_RUN
+        HW_4_2_RUN
         src/main.cpp
 )
 
 # link the new hello_library target with the hello_binary target
-target_link_libraries(HW_x_x_RUN
+target_link_libraries(HW_4_2_RUN
         PRIVATE
-        xxxxx::lib
+        arr_diff::lib
         )
 
 # Tests

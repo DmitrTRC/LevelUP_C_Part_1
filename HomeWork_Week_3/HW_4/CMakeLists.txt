@@ -31,12 +31,12 @@ target_include_directories(HW_3_4_Lib
 
 # Add an executable with the above sources
 add_executable(
-        HW_4_RUN
+        HW_3_4_RUN
         src/main.cpp
 )
 
 # link the new hello_library target with the hello_binary target
-target_link_libraries(HW_4_RUN
+target_link_libraries(HW_3_4_RUN
         PRIVATE
         dec2bin::lib
         )

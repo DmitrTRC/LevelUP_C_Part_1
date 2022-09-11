@@ -31,12 +31,12 @@ target_include_directories(HW_3_5_Lib
 
 # Add an executable with the above sources
 add_executable(
-        HW_5_RUN
+        HW_3_5_RUN
         src/main.cpp
 )
 
 # link the new hello_library target with the hello_binary target
-target_link_libraries(HW_5_RUN
+target_link_libraries(HW_3_5_RUN
         PRIVATE
         df_seq::lib
         )

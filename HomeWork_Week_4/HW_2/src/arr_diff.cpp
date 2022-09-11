@@ -2,7 +2,7 @@
 // Created by Dmitry Morozov on 5/9/22.
 //
 
-#include "Task1.hpp"
+#include "shared/arr_diff.hpp"
 
 #include <array>
 
@@ -18,7 +18,7 @@
  */
 std::array<int, 15> getIndexesOfElementsNotInArrayB (const std::array<int, 30> &arrayA,
                                                      const std::array<int, 15> &arrayB) {
-    std::array<int, 15> arrayC;
+    std::array<int, 15> arrayC{};
 
     int index = 0;
 
