@@ -4,7 +4,7 @@
 
 // Swap MAX and last negative element for M(40) array
 
-#include "Task1.hpp"
+#include "shared/kswap.hpp"
 
 #include <array>
 #include <cmath>
