@@ -2,7 +2,7 @@
 // Created by Dmitry Morozov on 9/9/22.
 //
 
-#include "Task_2.hpp"
+#include "shared/single_number_2.hpp"
 
 #include <vector>
 

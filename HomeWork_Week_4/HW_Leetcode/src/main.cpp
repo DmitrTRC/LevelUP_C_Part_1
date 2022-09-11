@@ -4,12 +4,18 @@
 
 /// Leetcode task 1, task2, task3 Demos
 
-#include "main.hpp"
-#include "Task_1.hpp"
-#include "Task_2.hpp"
-#include "Task_3.hpp"
+#include "shared/single_number_1.hpp"
+#include "shared/single_number_2.hpp"
+#include "shared/single_number_3.hpp"
 
 #include <iostream>
+
+
+void demoT1 ();
+
+void demoT2 ();
+
+void demoT3 ();
 
 /**
  * @brief Main function
@@ -64,5 +70,5 @@ void demoT3 () {
 
     auto solution = new Leetcode_3::Task3;
     std::cout << "Single numbers are: " << solution->singleNumber (nums).at (0) << " and "
-            << solution->singleNumber (nums).at (1) << std::endl;
+              << solution->singleNumber (nums).at (1) << std::endl;
 }

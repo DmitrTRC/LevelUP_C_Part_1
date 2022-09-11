@@ -2,10 +2,11 @@
 // Created by Dmitry Morozov on 9/9/22.
 //
 
-#include "Task_3.hpp"
+#include "shared/single_number_3.hpp"
 
 #include <map>
 #include <vector>
+
 
 /**
  * Given an integer array nums, in which exactly two elements appear only once and all the other elements appear exactly twice.
