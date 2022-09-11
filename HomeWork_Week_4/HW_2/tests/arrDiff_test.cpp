@@ -7,7 +7,7 @@
 #include "shared/arr_diff.hpp"
 
 
-TEST (ArrayDifference, array_diff) {
+TEST (ArrayDifference, arrayDiff) {
     EXPECT_EQ (1, 1);
 
 }

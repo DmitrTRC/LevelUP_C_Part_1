@@ -7,7 +7,7 @@
 #include "Task1.hpp"
 
 
-TEST(Task1, demo_Test) {
+TEST(Task1, demoTest) {
     EXPECT_EQ(1, 1);
 
 }

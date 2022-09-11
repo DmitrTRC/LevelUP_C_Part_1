@@ -7,7 +7,7 @@
 #include "shared/swap_mln.hpp"
 
 
-TEST (CheckSwapPositions, swap_max_and_min_negative) {
+TEST (CheckSwapPositions, isSwap) {
     EXPECT_EQ (1, 1);
 
 }

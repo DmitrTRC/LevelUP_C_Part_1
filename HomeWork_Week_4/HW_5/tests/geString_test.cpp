@@ -7,7 +7,7 @@
 #include "shared/get_even_string.hpp"
 
 
-TEST(EvenStrins, test_string_to_even) {
+TEST(EvenStrins, isEvenOnly) {
 
     EXPECT_EQ(1, 1);
 

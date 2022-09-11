@@ -7,7 +7,7 @@
 #include "shared/kswap.hpp"
 
 
-TEST (K_SWAP, Swaping_k_row_col) {
+TEST (K_SWAP, checkSwap) {
     EXPECT_EQ (1, 1);
 
 }

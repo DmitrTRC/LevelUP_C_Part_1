@@ -7,7 +7,7 @@
 #include "shared/dswap.hpp"
 
 
-TEST (Taskx, xxx) {
+TEST (SwapDigits, swap) {
     EXPECT_EQ (1, 1);
 
 }
