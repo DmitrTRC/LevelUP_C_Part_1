@@ -16,4 +16,5 @@ target_link_libraries(HW_3_5_Tests_run
         )
 
 include(GoogleTest)
+
 gtest_discover_tests(HW_3_5_Tests_run)
