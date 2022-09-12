@@ -35,14 +35,6 @@ int main () {
     std::cout << "Array after swap : ";
     printArray (array_sample);
 
-    Array sample2{1, 2, 3, 4, 5, 6, 7, 8};
-    std::cout << "Array before swap : ";
-    printArray (sample2);
-    swapElements (sample2);
-    std::cout << "Array after swap : ";
-    printArray (sample2);
-    
-
     return 0;
 }
 
