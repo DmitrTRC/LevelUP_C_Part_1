@@ -5,6 +5,12 @@
 #ifndef LEVELUP_C_PARTI_DEV_TASK1_HPP
 #define LEVELUP_C_PARTI_DEV_TASK1_HPP
 
-void swap_elements (int *, int);
+
+#include <vector>
+
+
+typedef std::vector<int> Array;
+
+void swapElements (Array &);
 
 #endif //LEVELUP_C_PARTI_DEV_TASK1_HPP

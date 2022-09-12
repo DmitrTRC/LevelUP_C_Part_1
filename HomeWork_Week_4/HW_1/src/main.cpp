@@ -10,38 +10,46 @@
 
 
 /**
- * It takes an array and its size as arguments and prints the array's elements to the screen
+ * It takes an array as argument and prints the array's elements to the screen
  *
- * @param array the array to be sorted
- * @param n the number of elements in the array
+ * @param  array : the array to be printed
  */
-void print_array (int *array, int n) {
+void printArray (Array &array);
 
-    for (int i = 0; i < n; ++i) {
-        std::cout << array[i] << " ";
-    }
-    std::cout << std::endl;
-}
 
 /**
  * @brief main function
- * @return 0
+ * @return : 0
  */
 int main () {
     std::cout << "HOME WORK 4\n\nTask 1" << std::endl;
 
-    int array_sample[40] = {1, -2, 3, 4, -5, 6, 7, 8, -9, 10,
-                            11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                            21, 22, 23, 24, 25, 26, 27, 28, 41, 30,
-                            31, 32, 33, 34, 35, 36, 37, 38, 39, 40};
+    Array array_sample{1, -2, 3, 4, -5, 6, 7, 8, -9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                       21, 22, 23, 24, 25, 26, 27, 28, 41, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40};
 
     std::cout << "Array before swap : ";
-    print_array (array_sample, 40);
+    printArray (array_sample);
 
-    swap_elements (array_sample, 40);
+    swapElements (array_sample);
 
     std::cout << "Array after swap : ";
-    print_array (array_sample, 40);
+    printArray (array_sample);
+
+    Array sample2{1, 2, 3, 4, 5, 6, 7, 8};
+    std::cout << "Array before swap : ";
+    printArray (sample2);
+    swapElements (sample2);
+    std::cout << "Array after swap : ";
+    printArray (sample2);
+    
 
     return 0;
+}
+
+
+void printArray (Array &array) {
+    for (auto &element: array) {
+        std::cout << element << " ";
+    }
+    std::cout << std::endl;
 }
