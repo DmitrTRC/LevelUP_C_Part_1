@@ -13,7 +13,7 @@
  * @param  `Task1`: the name of the test suite
  * @param  'getNaturalLength': the name of the test
  */
-TEST(Task1, getNauralLength) {
+TEST(getNauralLength, checkLength) {
 
     EXPECT_EQ(getNaturalLength (2), 1);
     EXPECT_EQ(getNaturalLength (34), 2);

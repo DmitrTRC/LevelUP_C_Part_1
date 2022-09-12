@@ -8,9 +8,9 @@
 
 
 TEST (Task2, lcd) {
-    EXPECT_EQ (lcd (1, 1, 1), 1);
+    ASSERT_EQ (lcd (1, 1, 1), 1);
     ASSERT_NE (lcd (1, 1, 1), 0);
-    EXPECT_EQ(lcd (4, 6, 8), 2);
-    EXPECT_EQ(lcd (10, 15, 20), 5);
-
+    ASSERT_EQ (lcd (4, 6, 8), 2);
+    ASSERT_EQ (lcd (10, 15, 20), 5);
+    ASSERT_EQ (lcd (3, 5, 7), 1);
 }
