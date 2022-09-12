@@ -7,7 +7,7 @@
 #include "gtest/gtest.h"
 
 
-TEST(Task5, reduceSequence) {
+TEST(Sum_reduceSequence_Test, reduceSequence) {
     const double EPSILON = 1e-5;
 
     EXPECT_NEAR(reduceSequence (0.051), 0.05102216025, EPSILON);

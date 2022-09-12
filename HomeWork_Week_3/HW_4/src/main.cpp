@@ -21,7 +21,7 @@ int main () {
     std::cin >> N;
 
     std::cout << "Decimal number :  " << N << " equal binary : " << decToBinary (N) << std::endl;
-    std::cout << "Decimal number :  " << N << " equal binary : " << dec2bin_s (N) << std::endl;
+    std::cout << "Decimal number :  " << N << " equal binary (string) : " << dec2bin_s (N) << std::endl;
     std::cout << "Decimal number :  " << N << " equal binary : " << dec2bin_u (N) << std::endl;
 
 

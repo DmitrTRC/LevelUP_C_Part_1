@@ -38,7 +38,8 @@ auto decToBinary (unsigned number) -> unsigned {
  * @return A string of the binary representation of the number.
  */
 auto dec2bin_s (unsigned number) -> std::string {
-    return std::bitset<sizeof (number) * 8> (number).to_string ();
+    std::string result = std::bitset<sizeof (number) * 8> (number).to_string ();
+    return result.erase (0, result.find_first_not_of ('0'));
 }
 
 /**
