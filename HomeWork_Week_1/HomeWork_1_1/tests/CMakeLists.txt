@@ -11,8 +11,7 @@ add_executable(HW_1_1_Tests_run
         )
 
 target_link_libraries(HW_1_1_Tests_run
-        gtest
-        gtest_main
+        GTest::gtest_main
         HW_1_1_lib
         )
 

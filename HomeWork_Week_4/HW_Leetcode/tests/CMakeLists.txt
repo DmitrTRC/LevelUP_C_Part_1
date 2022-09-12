@@ -13,7 +13,7 @@ add_executable(HW_4_Leetcode_Tests_run
         )
 
 target_link_libraries(HW_4_Leetcode_Tests_run
-        gtest_main
+        GTest::gtest_main
         leet_sn::lib
         )
 

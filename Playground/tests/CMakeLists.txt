@@ -13,8 +13,7 @@ add_executable(Playground_Tests_run
         )
 
 target_link_libraries(Playground_Tests_run
-        gtest
-        gtest_main
+        GTest::gtest_main
         Playground_lib
         )
 

@@ -11,7 +11,7 @@ add_executable(HW_4_6_Tests_run
         )
 
 target_link_libraries(HW_4_6_Tests_run
-        gtest_main
+        GTest::gtest_main
         valid_brackets::lib
         )
 

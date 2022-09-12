@@ -11,7 +11,7 @@ add_executable(HW_3_5_Tests_run
         )
 
 target_link_libraries(HW_3_5_Tests_run
-        gtest_main
+        GTest::gtest_main
         df_seq::lib
         )
 
