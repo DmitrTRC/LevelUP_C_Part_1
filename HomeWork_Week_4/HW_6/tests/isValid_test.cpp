@@ -8,6 +8,33 @@
 
 
 TEST (validBrackets, isValid) {
-    EXPECT_EQ (1, 1);
+
+    EXPECT_TRUE (isValidBracketsExpression ("()"));
+    EXPECT_TRUE (isValidBracketsExpression ("[]"));
+    EXPECT_TRUE (isValidBracketsExpression ("{}"));
+    EXPECT_TRUE (isValidBracketsExpression ("<>"));
+
+    EXPECT_TRUE (isValidBracketsExpression ("()[]{}<>"));
+    EXPECT_TRUE (isValidBracketsExpression ("([]{})<>"));
+    EXPECT_TRUE (isValidBracketsExpression ("([]{})<>()"));
+
+    EXPECT_FALSE (isValidBracketsExpression ("("));
+    EXPECT_FALSE (isValidBracketsExpression ("["));
+    EXPECT_FALSE (isValidBracketsExpression ("{"));
+    EXPECT_FALSE (isValidBracketsExpression ("<"));
+
+    EXPECT_FALSE (isValidBracketsExpression (")"));
+    EXPECT_FALSE (isValidBracketsExpression ("]"));
+    EXPECT_FALSE (isValidBracketsExpression ("}"));
+    EXPECT_FALSE (isValidBracketsExpression (">"));
+
+    EXPECT_FALSE (isValidBracketsExpression ("(]"));
+    EXPECT_FALSE (isValidBracketsExpression ("[)"));
+    EXPECT_FALSE (isValidBracketsExpression ("{]"));
+
+    EXPECT_TRUE (isValidBracketsExpression (""));
+
+    EXPECT_FALSE (isValidBracketsExpression ("(]"));
+
 
 }

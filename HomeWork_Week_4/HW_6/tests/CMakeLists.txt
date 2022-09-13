@@ -7,6 +7,7 @@ message(STATUS "HW_4_6_Lib Source DIR : ${HW_4_6_Lib_SOURCE_DIR}")
 
 
 add_executable(HW_4_6_Tests_run
+        stack_test.cpp
         isValid_test.cpp
         )
 

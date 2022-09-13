@@ -22,6 +22,8 @@ public:
 
     [[nodiscard]] bool isEmpty () const;
 
+    [[nodiscard]] int size () const;
+
 private:
     struct Node {
         char value;
