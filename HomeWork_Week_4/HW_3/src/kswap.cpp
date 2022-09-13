@@ -7,7 +7,6 @@
 #include <random>
 
 
-
 /**
  * It swaps the k-th row and the k-th column of a square matrix
  *
@@ -15,9 +14,6 @@
  * @param k the index of the row and column to swap
  */
 void Swap_matrix_col_and_row (Matrix &matrix, int k) {
-    if (k < 0 || k >= matrix.size ()) {
-        throw std::invalid_argument ("Isn't square matrix! ");
-    }
 
     for (int i = 0; i < matrix.size (); ++i) {
         std::swap (matrix[i][k], matrix[k][i]);
