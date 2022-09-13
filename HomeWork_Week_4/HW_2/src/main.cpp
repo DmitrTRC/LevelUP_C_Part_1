@@ -6,7 +6,6 @@
 
 #include "shared/arr_diff.hpp"
 
-#include <array>
 #include <iostream>
 
 
@@ -16,12 +15,14 @@
  * @param array the array to be sorted
  *
  *  */
-void print_array (std::array<int, 15> arr) {
+void print_array (const Array &array) {
+    std::cout << "{ ";
 
-    for (auto &el: arr) {
+    for (const auto &el: array) {
         std::cout << el << " ";
     }
-    std::cout << std::endl;
+
+    std::cout << " }" << std::endl;
 
 }
 
@@ -32,9 +33,9 @@ void print_array (std::array<int, 15> arr) {
 int main () {
     std::cout << "HOME WORK 4\n\nTask 2" << std::endl;
 
-    std::array<int, 30> arrayA = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
-                                  25, 26, 27, 28, 29, 30};
-    std::array<int, 15> arrayB = {1, 2, 3, 4, 40, 6, 7, 42, 9, 10, 22, 12, 13, 55, 15};
+    Array arrayA = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+                    25, 26, 27, 28, 29, 30};
+    Array arrayB = {1, 88, 2, 89, 3, 90, 4, 91, 5, 92, 6, 93, 7, 94, 8};
 
     auto arrayC = getIndexesOfElementsNotInArrayB (arrayA, arrayB);
 
