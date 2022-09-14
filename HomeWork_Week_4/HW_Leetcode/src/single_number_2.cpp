@@ -4,6 +4,7 @@
 
 #include "shared/single_number_2.hpp"
 
+#include <algorithm>
 #include <vector>
 
 
@@ -12,22 +13,11 @@
  * @param nums
  * @return int
  */
-int Leetcode_2::Task2::singleNumber (std::vector<int> &nums) {
-    std::sort (nums.begin (), nums.end ());
-    int counter{0};
-    int cur_n = nums.at (0);
-    for (auto n: nums) {
-        if (n == cur_n) {
-            counter++;
-            continue;
-        }
-        if (counter == 1) {
-            break;
-        } else {
-            counter = 1;
-            cur_n = n;
-
+int Leetcode_2::Task::singleNumber (std::vector<int> &nums) const {
+    for (const auto number: nums) {
+        if (std::count (nums.begin (), nums.end (), number) == 1) {
+            return number;
         }
     }
-    return cur_n;
+    throw std::invalid_argument ("There is no single number in the array");
 }

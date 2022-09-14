@@ -8,41 +8,33 @@
 
 
 /**
- * Swap the k-th column with the k-th row
+ * It swaps the k-th row and the k-th column of a square matrix
  *
- * @param array the array to be swapped
- * @param k the column and row to swap
- *
- * @return a boolean value.
+ * @param matrix a matrix of integers
+ * @param k the index of the row and column to swap
  */
-bool Swap_matrix_col_and_row (int array[7][7], int k) {
-    const int size = 6;
-    if (k > size) {
-        return false;
-    }
-    for (int i = 0; i < size; ++i) {
-        int temp = array[i][k];
-        array[i][k] = array[k][i];
-        array[k][i] = temp;
-    }
+void Swap_matrix_col_and_row (Matrix &matrix, int k) {
 
-    return true;
+    for (int i = 0; i < matrix.size (); ++i) {
+        std::swap (matrix[i][k], matrix[k][i]);
+    }
 }
 
+
 /**
- * This function prints a 2D array of integers
+ * It generates a random 2d square matrix of size `n` where `n` is the size of the matrix
  *
- * @param array the 2D array to print
- * @param size the size of the matrix
+ * @param matrix the matrix to be filled with random numbers
  */
-void Generate_random_2d_square_matrix (int *array, int size) {
+void Generate_random_2d_square_matrix (Matrix &matrix) {
+    std::random_device rd;
+    std::mt19937 gen (rd ());
+    std::uniform_int_distribution<> dis (0, 100);
 
-
-    std::default_random_engine generator;
-    std::uniform_int_distribution<int> distribution (1975, 2021);
-
-    for (int i = 0; i < size; ++i) {
-        *(array + i) = distribution (generator);
+    for (auto &row: matrix) {
+        for (auto &col: row) {
+            col = dis (gen);
+        }
     }
 }
 

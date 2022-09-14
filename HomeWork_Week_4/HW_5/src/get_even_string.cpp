@@ -24,6 +24,8 @@ std::string deleteOddLengthWords (std::string &str) {
         }
     }
 
+    result.pop_back ();
+
     return result;
 }
 

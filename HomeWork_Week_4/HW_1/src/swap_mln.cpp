@@ -4,31 +4,21 @@
 
 #include "shared/swap_mln.hpp"
 
-#include <iostream>
-
 
 /**
  * It swaps the maximum element of the array with the last negative element of the array
  *
- * @param array the array to be sorted
- * @param n the number of elements in the array
+ * @param array the array to be processed
  */
-void swap_elements (int *array, int n) {
-    int max = array[0];
-    int max_index = 0;
-    int last_negative = array[0];
-    int last_negative_index = 0;
-    for (int i = 0; i < n; ++i) {
-        if (array[i] > max) {
-            max = array[i];
-            max_index = i;
-        }
-        if (array[i] < 0) {
-            last_negative = array[i];
-            last_negative_index = i;
-        }
+void swapElements (Array &array) {
+    auto max_element = std::max_element (array.begin (), array.end ());
+    auto last_negative_element = std::find_if (array.rbegin (), array.rend (),
+                                               [] (int element) { return element < 0; });
+
+    if (last_negative_element != array.rend ()) {
+        std::swap (*max_element, *last_negative_element);
+    } else {
+        throw std::invalid_argument ("There is no negative elements in array");
     }
-    array[max_index] = last_negative;
-    array[last_negative_index] = max;
 
 }

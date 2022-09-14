@@ -4,6 +4,8 @@
 
 #include "shared/C_Stack.hpp"
 
+#include <stdexcept>
+
 
 /**
  * Constructor
@@ -42,7 +44,7 @@ void C_stack::push (char value) {
  */
 void C_stack::pop () {
     if (isEmpty ()) {
-        return;
+        throw std::runtime_error ("Stack is empty");
     }
 
     Node *temp = head;
@@ -55,7 +57,10 @@ void C_stack::pop () {
  * @param
  * @return char element
  */
-char C_stack::top () const {
+char C_stack::top () {
+    if (isEmpty ()) {
+        throw std::runtime_error ("Stack is empty");
+    }
     return head->value;
 }
 
@@ -66,6 +71,22 @@ char C_stack::top () const {
  */
 bool C_stack::isEmpty () const {
     return head == nullptr;
+}
+
+/**
+ * It returns the size of the stack.
+ *
+ * @return The size of the stack.
+ */
+int C_stack::size () const {
+    int size = 0;
+    Node *temp = head;
+    while (temp != nullptr) {
+        size++;
+        temp = temp->next;
+    }
+
+    return size;
 }
 
 

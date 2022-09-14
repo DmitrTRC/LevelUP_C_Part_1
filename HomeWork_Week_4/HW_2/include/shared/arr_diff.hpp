@@ -5,10 +5,12 @@
 #ifndef LEVELUP_C_PARTI_DEV_TASK1_HPP
 #define LEVELUP_C_PARTI_DEV_TASK1_HPP
 
-#include <array>
+#include <vector>
 
 
-std::array<int, 15> getIndexesOfElementsNotInArrayB (const std::array<int, 30> &,
-                                                     const std::array<int, 15> &);
+typedef std::vector<int> Array;
+
+Array getIndexesOfElementsNotInArrayB (const Array &,
+                                       const Array &);
 
 #endif //LEVELUP_C_PARTI_DEV_TASK1_HPP

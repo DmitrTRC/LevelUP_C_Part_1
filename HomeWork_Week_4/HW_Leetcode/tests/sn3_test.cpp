@@ -7,7 +7,22 @@
 #include "shared/single_number_3.hpp"
 
 
+using namespace Leetcode_3;
+
 TEST (SingleNumberIII, getSingleNumber) {
-    EXPECT_EQ (1, 1);
+    Task task;
+    std::vector<int> nums = {1, 2, 1, 3, 2, 5};
+    std::vector<int> expected = {3, 5};
+
+    EXPECT_EQ (task.singleNumber (nums), expected);
+
+    nums = {1, 2, 1, 3, 2, 5, 5, 6, 6};
+    EXPECT_ANY_THROW(task.singleNumber (nums));
+
+    nums = {1, 2, 1, 3, 2, 5, 5, 6, 6, 4, 7};
+    EXPECT_ANY_THROW(task.singleNumber (nums));
+
+    nums = {1, 2, 1, 3, 2, 5, 5, 6, 6, 4, 7, 7};
+    EXPECT_NO_THROW(task.singleNumber (nums));
 
 }

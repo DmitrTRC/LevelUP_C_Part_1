@@ -14,19 +14,26 @@
  * @param nums
  * @return std::vector<int>
  */
-std::vector<int> Leetcode_3::Task3::singleNumber (std::vector<int> &nums) {
+std::vector<int> Leetcode_3::Task::singleNumber (std::vector<int> &nums) const {
     std::map<int, int> frequency;
     std::vector<int> res;
-    for (auto num: nums) {
+    for (const auto num: nums) {
         frequency[num]++;
     }
-    for (auto &[key, value]: frequency) {
+    for (const auto &[key, value]: frequency) {
         if (value == 1) {
             res.push_back (key);
+
         }
 
     }
-    return res;
+
+    if (res.size () == 2) {
+        return res;
+    } else {
+        throw std::invalid_argument ("No only two single numbers in the array");
+    }
+
 }
 
 
