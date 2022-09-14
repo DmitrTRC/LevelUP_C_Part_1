@@ -22,4 +22,7 @@ TEST (SingleNumberIII, getSingleNumber) {
     nums = {1, 2, 1, 3, 2, 5, 5, 6, 6, 4, 7};
     EXPECT_ANY_THROW(task.singleNumber (nums));
 
+    nums = {1, 2, 1, 3, 2, 5, 5, 6, 6, 4, 7, 7};
+    EXPECT_NO_THROW(task.singleNumber (nums));
+
 }
