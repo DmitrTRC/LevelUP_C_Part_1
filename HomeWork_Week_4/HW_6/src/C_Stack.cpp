@@ -57,7 +57,7 @@ void C_stack::pop () {
  * @param
  * @return char element
  */
-char C_stack::top () const {
+char C_stack::top () {
     if (isEmpty ()) {
         throw std::runtime_error ("Stack is empty");
     }

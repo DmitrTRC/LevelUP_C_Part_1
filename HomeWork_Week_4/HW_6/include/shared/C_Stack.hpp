@@ -18,7 +18,7 @@ public:
 
     void pop ();
 
-    [[nodiscard]] char top () const;
+    char top ();
 
     [[nodiscard]] bool isEmpty () const;
 
