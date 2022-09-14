@@ -4,7 +4,7 @@
 
 #include "shared/single_number_1.hpp"
 
-#include <vector>
+#include <numeric>
 
 
 /**
@@ -12,10 +12,7 @@
  * @param nums
  * @return int
  */
-int Leetcode_1::Task1::singleNumber (std::vector<int> &nums) {
-    int result = 0;
-    for (int num: nums) {
-        result ^= num;
-    }
-    return result;
+int Leetcode_1::Task::singleNumber (std::vector<int> &nums) const {
+
+    return std::accumulate (nums.begin (), nums.end (), 0, std::bit_xor<> ());
 }

@@ -10,9 +10,9 @@
 ///Given a non-empty array of integers nums, every element appears twice except for one. Find that single one
 namespace Leetcode_1 {
 
-    class Task1 {
+    class Task {
     public:
-        int singleNumber (std::vector<int> &);
+        int singleNumber (std::vector<int> &) const;
 
     };
 }

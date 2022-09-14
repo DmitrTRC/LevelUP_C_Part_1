@@ -44,7 +44,7 @@ void demoT1 () {
 
     std::cout << "Given array: " << "{2, 2, 7, 3, 3, 4, 6, 6, 4, 5, 5}" << std::endl;
 
-    auto solution = new Leetcode_1::Task1;
+    auto solution = new Leetcode_1::Task;
     std::cout << "Single number is: " << solution->singleNumber (nums) << std::endl;
 }
 
@@ -56,7 +56,7 @@ void demoT2 () {
 
     std::cout << "Given array: " << "{1, 1, 1, 2, 3, 2, 2, 8, 4, 8, 4, 8, 4}" << std::endl;
 
-    auto solution = new Leetcode_2::Task2;
+    auto solution = new Leetcode_2::Task;
     std::cout << "Single number is: " << solution->singleNumber (nums) << std::endl;
 }
 
@@ -68,7 +68,7 @@ void demoT3 () {
 
     std::cout << "Given array: " << "{1, 2, 1, 5, 3, 7, 2, 3, 5, 9}" << std::endl;
 
-    auto solution = new Leetcode_3::Task3;
+    auto solution = new Leetcode_3::Task;
     std::cout << "Single numbers are: " << solution->singleNumber (nums).at (0) << " and "
               << solution->singleNumber (nums).at (1) << std::endl;
 }
