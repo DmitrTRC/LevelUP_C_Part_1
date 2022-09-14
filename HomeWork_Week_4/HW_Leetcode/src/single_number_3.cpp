@@ -5,6 +5,7 @@
 #include "shared/single_number_3.hpp"
 
 #include <map>
+#include <stdexcept>
 #include <vector>
 
 

@@ -14,5 +14,6 @@
  */
 int Leetcode_1::Task::singleNumber (std::vector<int> &nums) const {
 
-    return std::accumulate (nums.begin (), nums.end (), 0, std::bit_xor<> ());
+    return std::accumulate (nums.begin (), nums.end (), 0,
+                            [] (int lhs, int rhs) { return lhs ^ rhs; });
 }

@@ -4,6 +4,8 @@
 
 #include "shared/swap_mln.hpp"
 
+#include <stdexcept>
+
 
 /**
  * It swaps the maximum element of the array with the last negative element of the array

@@ -5,6 +5,7 @@
 #include "shared/single_number_2.hpp"
 
 #include <algorithm>
+#include <stdexcept>
 #include <vector>
 
 
