@@ -52,8 +52,7 @@ auto reduceSequence (double x) -> long double {
         result += current;
         ++iteration;
     }
-    result += current;
-    ++iteration;
+   
 
     return result;
 }
